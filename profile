@@ -21,6 +21,7 @@ alias mv='mv -i'
 alias noise='openssl rand 1024 | openssl sha1'
 alias root='sudo -i'
 alias tarsnap="tarsnap --configfile ${HOME}/.dot/tarsnap.conf"
+alias vbox='VBoxManage'
 
 available "vim" && alias vi="vim -u ${HOME}/.dot/vimrc"
 
