@@ -1,40 +1,76 @@
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " general
 set nocompatible
 set runtimepath^=${HOME}/.dot/vim
-filetype plugin indent on
+set autoread
 
-" colors
-set background=dark
-colorscheme zenburn
-let g:zenburn_force_dark_Background=1
-syntax on
-hi Comment ctermfg=black guifg=black
+runtime macros/matchit.vim
 
-" interface
-set backspace=indent,eol,start
-set guifont=Menlo:h16
-set guioptions-=T                      " do not display the toolbar
-set laststatus=2
-set list listchars=tab:→\ 
-set matchpairs=(:),{:},[:],<:>
+" backups
+set nowritebackup                      " do not keep a backup while working
+set nobackup                           " do not keep a backup after close
+set noswapfile                         " do not keep .swp files
+set viminfo=""                         " do not keep a .viminfo file
+
+" formatting
+set nostartofline
 set nowrap
-set number
-set ruler
-set scrolloff=9
-set shortmess=xtI                      " skip prompts from messages
-set showcmd
-set showmatch
-set showmode
-set visualbell
+set autoindent
+set backspace=indent,eol,start
+set expandtab
+set matchpairs=(:),{:},[:],<:>
+set shiftwidth=4
+set smarttab
+set tabstop=4
 set whichwrap=b,s,h,l,<,>,[,]
+
+if has("autocmd")
+    filetype plugin on
+    filetype indent on
+endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" interface
+set guifont=Menlo:h16
+set guioptions-=T             " do not display the toolbar
+set hidden
+set list listchars=tab:→\ 
+set number
+set shortmess=xtI             " skip prompts from messages
+set showmatch
+set visualbell
+
+"commands
+set noshowcmd
+set cmdheight=1
+
+"completion
 set wildmenu
 set wildmode=longest:full
 
+"scrolling
+set scrolloff=9
+set sidescroll=1
+set sidescrolloff=9
+
+" colors
+set background=dark
+let g:zenburn_force_dark_Background=1
+colorscheme zenburn
+if has("syntax")
+    syntax on
+    hi Comment ctermfg=black guifg=black
+    hi LineNr ctermfg=black
+endif
+
 " statusline
-set statusline=\                                 " "
+set noruler
+set laststatus=2
+
+set statusline=\                                 "space
 set statusline+=%<%f                             "filename
-set statusline+=\                                " "
+set statusline+=\                                "space
 set statusline+=%r                               "read-only flag
 set statusline+=%m                               "modified flag
 set statusline+=%=                               "separator
@@ -43,21 +79,7 @@ set statusline+=[%{&ff}]                         "file format
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}]  "file encoding
 set statusline+=%9(%l,%v%)                       "the ruler
 set statusline+=%5p%%                            "percent through file
-set statusline+=\                                " "
-
-" backups
-set nowritebackup                      " do not keep a backup while working
-set nobackup                           " do not keep a backup after close
-set viminfo=""                         " do not keep a .viminfo file
-set noswapfile                         " do not keep .swp files
-
-" formatting
-set autoindent
-set expandtab
-set nostartofline
-set shiftwidth=4
-set smarttab
-set tabstop=4
+set statusline+=\                                "space
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " keymappings
@@ -70,7 +92,7 @@ map <C-e> $
 imap <C-e> <C-o>$
 
 " for stupid fingers
-noremap ; : 
+noremap ; :
 
 " reflow paragraphs
 nnoremap <C-q> gqap
@@ -95,13 +117,13 @@ inoremap <Up> <C-o>gk
 " MARKDOWN
 
 "set filetypes
-au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=markdown
+au BufRead,BufNewFile *.{md,mkdn,markdown} set filetype=markdown
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NU
 
 " set filetypes
-au BufNewFile,BufRead *.nu,*.nujson,Nukefile setf nu
+au BufNewFile,BufRead *.nu,*.nujson,Nukefile filetype=nu
 au BufNewFile,BufRead *.nu,*.nujson,Nukefile set makeprg=nuke
 
 
@@ -129,3 +151,5 @@ au BufRead,BufNewFile *.py match BadWhitespace /^\t\+/
 " make trailing whitespace show as bad
 au BufRead,BufNewFile *.py match BadWhitespace /\s\+$/
 
+" keep indentation at integer multiple of shiftwidth
+au BufRead,BufNewFile *.py set shiftround
