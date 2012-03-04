@@ -19,7 +19,6 @@ alias ll='ls -la'
 alias m='more'
 alias mv='mv -i'
 alias noise='openssl rand 1024 | openssl sha1'
-alias rm='rm -rf'
 alias root='sudo -i'
 alias tarsnap="tarsnap --configfile ${HOME}/.dot/tarsnap.conf"
 
@@ -70,7 +69,6 @@ if [ $(uname) = "Darwin" ]; then
     alias root='su administrator -c "sudo sh"'
     alias top='top -o cpu'
     available "SetFile" && alias hide='/Developer/Tools/SetFile -a V'
-    available "trash" && alias rm='trash'
     export EDITOR='mvim -f'
     export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
     export COPYFILE_DISABLE=true
