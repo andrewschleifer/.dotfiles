@@ -2,9 +2,12 @@
     amend = commit --amend
     cherrypick = cherry-pick
     co = checkout
+    detach = checkout HEAD^0
     dt = difftool
     eat = merge --no-ff
-    l = log --all --graph --decorate --oneline
+    l = log --all --decorate --oneline --graph
+    ll = log --no-merges
+    lu = log --no-merges -u
     mt = mergetool
     st = status -sb
     w = whatchanged
