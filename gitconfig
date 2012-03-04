@@ -2,8 +2,10 @@
     amend = commit --amend
     cherrypick = cherry-pick
     co = checkout
+    dt = difftool
     eat = merge --no-ff
     l = log --all --graph --decorate --oneline
+    mt = mergetool
     st = status -sb
     w = whatchanged
     unstage = reset HEAD
@@ -13,8 +15,17 @@
     excludesfile = "~/.dot/gitignore"
 [difftool]
     prompt = false
+[difftool "opendiff"]
+    cmd = opendiff "$LOCAL" "$REMOTE"
+[difftool "gitx"]
+    cmd = git diff "$LOCAL" "$REMOTE" | gitx
 [mergetool]
     prompt = false
+    keepBackup = true
+[mergetool "opendiff"]
+    cmd = opendiff "$LOCAL" "$REMOTE" -merge "$REMOTE"
+    keepBackup = false
+    trustExitCode = false
 [user]
     name = Andrew Schleifer
     email = me@andrewschleifer.name
