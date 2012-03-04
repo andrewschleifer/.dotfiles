@@ -69,7 +69,7 @@ if [ $(uname) = "Darwin" ]; then
     alias root='su administrator -c "sudo sh"'
     alias top='top -o cpu'
     available "SetFile" && alias hide='/Developer/Tools/SetFile -a V'
-    export EDITOR='mvim -f'
+    export EDITOR='mate -w'
     export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
     export COPYFILE_DISABLE=true
 fi
