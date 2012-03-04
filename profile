@@ -73,6 +73,7 @@ if [ $(uname) = "Darwin" ]; then
     export EDITOR='mate -w'
     export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
     export COPYFILE_DISABLE=true
+    export PYTHONPATH="${HOME}/Library/Python"
 fi
 
 if [ -f /Library/ArchMac/etc/archmac/env.sh ]; then
