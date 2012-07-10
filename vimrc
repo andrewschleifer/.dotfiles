@@ -35,7 +35,7 @@ endif
 set guifont=Menlo:h16
 set guioptions-=T             " do not display the toolbar
 set hidden
-set list listchars=tab:→\ 
+set list listchars=tab:→\ ,eol:¬
 set number
 set shortmess=xtI             " skip prompts from messages
 set showmatch
