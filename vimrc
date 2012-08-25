@@ -18,7 +18,7 @@ set nowrap
 set autoindent
 set backspace=indent,eol,start
 set expandtab
-set matchpairs=(:),{:},[:],<:>
+set matchpairs=(:),{:},[:]
 set shiftwidth=4
 set smarttab
 set tabstop=4
