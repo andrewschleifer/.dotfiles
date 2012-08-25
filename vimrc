@@ -31,8 +31,6 @@ endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " interface
-set guifont=Menlo:h16
-set guioptions-=T             " do not display the toolbar
 set hidden
 set list listchars=tab:→\ ,eol:¬
 set number
