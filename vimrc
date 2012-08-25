@@ -4,8 +4,7 @@
 set nocompatible
 set runtimepath^=${HOME}/.dot/vim
 set autoread
-
-runtime macros/matchit.vim
+set tags=tags;/
 
 " backups
 set nowritebackup                      " do not keep a backup while working
@@ -94,10 +93,6 @@ imap <C-e> <C-o>$
 " for stupid fingers
 noremap ; :
 
-" reflow paragraphs
-nnoremap <C-q> gqap
-vnoremap <C-q> gq
-
 " leader+search to turn off highlighting
 nnoremap <leader>/ :nohls<CR>
 
@@ -113,43 +108,3 @@ nnoremap <Up> gk
 vnoremap <Up> gk
 inoremap <Up> <C-o>gk
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" MARKDOWN
-
-"set filetypes
-au BufRead,BufNewFile *.{md,mkdn,markdown} set filetype=markdown
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" NU
-
-" set filetypes
-au BufNewFile,BufRead *.nu,*.nujson,Nukefile filetype=nu
-au BufNewFile,BufRead *.nu,*.nujson,Nukefile set makeprg=nuke
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" PYTHON
-
-" full Python syntax highlighting
-let python_highlight_all=1
-
-" make bad whitespace stand out
-highlight BadWhitespace ctermbg=red guibg=red
-
-" make scripts executable (if they aren't already) when saved
-au BufWritePost *.py if !executable("'%:p'")|exe "sil !chmod a+x '%'"|en
-
-" remove any extra whitespace from the ends of lines when saving a file
-au BufWritePre *.py normal m`:%s/\s\+$//e`
-
-" always use UNIX (\n) line endings.
-au BufRead,BufNewFile *.py set fileformat=unix
-
-" make leading tabs show as bad
-au BufRead,BufNewFile *.py match BadWhitespace /^\t\+/
-
-" make trailing whitespace show as bad
-au BufRead,BufNewFile *.py match BadWhitespace /\s\+$/
-
-" keep indentation at integer multiple of shiftwidth
-au BufRead,BufNewFile *.py set shiftround
