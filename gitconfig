@@ -33,7 +33,8 @@
     name = Andrew Schleifer
     email = me@andrewschleifer.name
 [diff]
-	renames = copies
-	mnemonicprefix = true
+    renames = copies
+    mnemonicprefix = true
 [branch]
-	autosetupmerge = true
+    autosetupmerge = true
+
