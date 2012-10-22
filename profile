@@ -10,6 +10,7 @@ available()
 
 unalias -a
 alias ..='cd ..'
+alias astyle='astyle --options=$HOME/.dot/astylerc'
 alias cp='cp -i'
 alias df='df -h'
 alias du='du -hsc'
