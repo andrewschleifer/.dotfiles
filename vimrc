@@ -38,6 +38,10 @@ set shortmess=xtI             " skip prompts from messages
 set showmatch
 set visualbell
 
+" search
+set hlsearch
+set incsearch
+
 "commands
 set noshowcmd
 set cmdheight=1
