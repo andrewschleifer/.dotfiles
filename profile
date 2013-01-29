@@ -16,8 +16,10 @@ alias df='df -h'
 alias du='du -hsc'
 alias easy_install='easy_install -d ${PYTHONPATH}'
 alias gitx='gitx --all'
+alias got='git'
 alias l='ls'
 alias ll='ls -la'
+alias less='less -S#2'
 alias m='more'
 alias mv='mv -i'
 alias noise='openssl rand 1024 | openssl sha1'
@@ -71,16 +73,16 @@ export PATH
 if [ $(uname) = "Darwin" ]; then
     alias root='su administrator -c "sudo sh"'
     alias top='top -o cpu'
+    alias diff='ksdiff'
     available "SetFile" && alias hide='/Developer/Tools/SetFile -a V'
-    export EDITOR='vico -w'
     export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
     export COPYFILE_DISABLE=true
     export PYTHONPATH="${HOME}/Library/Python"
     export CLASSPATH="${HOME}/Library/Java"
 fi
 
-if [ -f /Library/ArchMac/etc/archmac/env.sh ]; then
-   source /Library/ArchMac/etc/archmac/env.sh
+if [ -f /Library/ArchMac/etc/profile ]; then
+   . /Library/ArchMac/etc/profile
 fi
 
 # INTERACTIVE
