@@ -106,3 +106,4 @@ nnoremap <Up> gk
 vnoremap <Up> gk
 inoremap <Up> <C-o>gk
 
+autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
