@@ -106,4 +106,8 @@ nnoremap <Up> gk
 vnoremap <Up> gk
 inoremap <Up> <C-o>gk
 
+nnoremap <cr> :nohlsearch<cr>
+autocmd CmdwinEnter * :unmap <cr>
+autocmd CmdwinLeave * :nnoremap <cr> :nohlsearch<cr>
+
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
