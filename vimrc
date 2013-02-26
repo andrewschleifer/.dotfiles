@@ -31,6 +31,7 @@ endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " interface
+set guifont=SourceCodePro-Regular:h15
 set hidden
 set list listchars=tab:→\ ,eol:¬
 set number
