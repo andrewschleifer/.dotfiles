@@ -1,3 +1,6 @@
+[user]
+    name = Andrew Schleifer
+    email = me@andrewschleifer.name
 [alias]
     amend = commit --amend
     blame = blame -w
@@ -48,9 +51,6 @@
 [mergetool "Kaleidoscope"]
     cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
     trustExitCode = true
-[user]
-    name = Andrew Schleifer
-    email = me@andrewschleifer.name
 [mergetool "SourceTree"]
     cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
     trustExitCode = true
