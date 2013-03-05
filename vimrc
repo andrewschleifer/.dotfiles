@@ -30,6 +30,10 @@ if has("autocmd")
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" plugins
+execute pathogen#infect()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " interface
 set guifont=SourceCodePro-Regular:h15
 set hidden
@@ -116,3 +120,4 @@ autocmd CmdwinEnter * :unmap <cr>
 autocmd CmdwinLeave * :nnoremap <cr> :nohlsearch<cr>
 
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
+
