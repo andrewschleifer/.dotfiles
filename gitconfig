@@ -9,7 +9,6 @@
     co = checkout
     detach = checkout HEAD^0
     dt = difftool
-    eat = merge --no-ff
     l = log --all --decorate --oneline --graph
     ll = log --no-merges
     lu = log --no-merges -u
