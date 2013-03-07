@@ -67,7 +67,9 @@ colorscheme zenburn
 if has("syntax")
     syntax on
     hi Comment ctermfg=black guifg=black
-    hi LineNr ctermfg=black
+    hi LineNr ctermfg=black ctermbg=darkgrey
+    hi NonText ctermfg=black
+    hi SpecialKey ctermfg=0
 endif
 
 " statusline
