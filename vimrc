@@ -61,15 +61,16 @@ set sidescroll=1
 set sidescrolloff=9
 
 " colors
+set t_Co=256
 set background=dark
 let g:zenburn_force_dark_Background=1
 colorscheme zenburn
 if has("syntax")
     syntax on
     hi Comment ctermfg=black guifg=black
-    hi LineNr ctermfg=black ctermbg=darkgrey
+    hi LineNr ctermfg=black
     hi NonText ctermfg=black
-    hi SpecialKey ctermfg=0
+    hi SpecialKey ctermfg=black
 endif
 
 " statusline
