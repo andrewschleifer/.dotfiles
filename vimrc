@@ -1,66 +1,30 @@
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" general
 set nocompatible
 set runtimepath^=${HOME}/.dot/vim
-set autoread
 set tags=tags;/
-
-" backups
-set nowritebackup                      " do not keep a backup while working
-set nobackup                           " do not keep a backup after close
-set noswapfile                         " do not keep .swp files
-set viminfo=""                         " do not keep a .viminfo file
-
-" formatting
+set viminfo=
 set nostartofline
 set nowrap
-set autoindent
-set backspace=indent,eol,start
 set expandtab
-set matchpairs=(:),{:},[:]
 set shiftwidth=4
-set smarttab
 set tabstop=4
 set whichwrap=b,s,h,l,<,>,[,]
-
-if has("autocmd")
-    filetype plugin on
-    filetype indent on
-endif
+set hlsearch
+set wildmode=longest:full
+set scrolloff=9
+set hidden
+set list
+set listchars=tab:→\ ,eol:¬
+set number
+set shortmess=xtI
+set visualbell
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" plugins
 execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" interface
 set guifont=SourceCodePro-Regular:h15
-set hidden
-set list listchars=tab:→\ ,eol:¬
-set number
-set shortmess=xtI             " skip prompts from messages
-set showmatch
-set visualbell
-
-" search
-set hlsearch
-set incsearch
-
-"commands
-set noshowcmd
-set cmdheight=1
-
-"completion
-set wildmenu
-set wildmode=longest:full
-
-"scrolling
-set scrolloff=9
-set sidescroll=1
-set sidescrolloff=9
-
-" colors
 set t_Co=256
 set background=dark
 let g:zenburn_force_dark_Background=1
@@ -72,10 +36,6 @@ if has("syntax")
     hi NonText ctermfg=black
     hi SpecialKey ctermfg=black
 endif
-
-" statusline
-set noruler
-set laststatus=2
 
 set statusline=\                                 "space
 set statusline+=%<%f                             "filename
@@ -91,8 +51,6 @@ set statusline+=%5p%%                            "percent through file
 set statusline+=\                                "space
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" keymappings
-let mapleader=","
 
 " some readline keybindings
 map <C-a> 0
@@ -102,9 +60,6 @@ imap <C-e> <C-o>$
 
 " for stupid fingers
 noremap ; :
-
-" leader+search to turn off highlighting
-nnoremap <leader>/ :nohls<CR>
 
 " fix movement when wrap is turned on
 nnoremap j gj
@@ -118,9 +73,11 @@ nnoremap <Up> gk
 vnoremap <Up> gk
 inoremap <Up> <C-o>gk
 
+" enter to stop search highlight
 nnoremap <cr> :nohlsearch<cr>
 autocmd CmdwinEnter * :unmap <cr>
 autocmd CmdwinLeave * :nnoremap <cr> :nohlsearch<cr>
 
+" fix git cursor position
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
 
