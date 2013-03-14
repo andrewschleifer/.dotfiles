@@ -96,4 +96,5 @@ if [ -n "$PS1" ]; then
     PS2='\[\e[1;37m\]... \[\e[0m\]'
     shopt -s cmdhist histverify nocaseglob
     complete -cf man sudo which
+    complete -W '$(cat ~/.ssh/known_hosts | cut -f 1 -d\  | tr , \\n | sort -u | grep \\.)' ssh
 fi
