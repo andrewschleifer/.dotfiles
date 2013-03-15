@@ -81,6 +81,7 @@ if [ $(uname) = "Darwin" ]; then
     export COPYFILE_DISABLE=true
     export PYTHONPATH="${HOME}/Library/Python"
     export CLASSPATH="${HOME}/Library/Java"
+    export LEIN_HOME="${HOME}/Library/Leiningen"
 fi
 
 if [ -f /Library/ArchMac/etc/profile ]; then
