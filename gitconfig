@@ -3,17 +3,18 @@
     email = me@andrewschleifer.name
 [alias]
     amend = commit --amend
-    blame = blame -w
+    bl = blame -w -M
     cherrypick = cherry-pick
     ci = commit
     co = checkout
     detach = checkout HEAD^0
     dt = difftool
-    l = log --all --decorate --oneline --graph
+    l = log --all --decorate --oneline --graph --date-order
     ll = log --no-merges
     lu = log --no-merges -u
     mt = mergetool
     st = status -sb
+    t = tag -n1
     w = whatchanged
     unstage = reset HEAD
 [branch]
