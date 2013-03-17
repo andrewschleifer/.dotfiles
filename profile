@@ -96,6 +96,9 @@ if [ -n "$PS1" ]; then
     PS1='\[\e[1;37m\]% \[\e[0m\]'
     PS2='\[\e[1;37m\]... \[\e[0m\]'
     shopt -s cmdhist histverify nocaseglob
-    complete -cf man sudo which
+    complete -d cd
+    complete -c man which
+    complete -c -f sudo
+    complete -f -W '$(git branch -a 2>/dev/null | awk "{print $NF}")' git
     complete -W '$(cat ~/.ssh/known_hosts | cut -f 1 -d\  | tr , \\n | sort -u | grep \\.)' ssh
 fi
