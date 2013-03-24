@@ -6,6 +6,11 @@ available()
     type "$1" >/dev/null 2>&1
 }
 
+_known_hosts_list()
+{
+    cat ~/.ssh/known_hosts | cut -f 1 -d\  | tr , \\n | sort -u | grep \\.
+}
+
 # ALIASES
 
 unalias -a
@@ -99,6 +104,7 @@ if [ -n "$PS1" ]; then
     complete -d cd
     complete -c man which
     complete -c -f sudo
-    complete -f -W '$(git branch -a 2>/dev/null | awk "{print $NF}")' git
-    complete -W '$(cat ~/.ssh/known_hosts | cut -f 1 -d\  | tr , \\n | sort -u | grep \\.)' ssh
+    complete -W '$(git branch -a 2>/dev/null | awk "{print $NF}")' -f git
+    complete -W '$(_known_hosts_list)' ssh
+    complete -W '$(_known_hosts_list)' -f scp
 fi
