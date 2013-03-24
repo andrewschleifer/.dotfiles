@@ -34,8 +34,6 @@ alias root='sudo -i'
 alias tarsnap="tarsnap --configfile ${HOME}/.dot/tarsnap.conf"
 alias vbox='VBoxManage'
 
-available "vim" && alias vi="vim -u ${HOME}/.dot/vimrc"
-
 # ENVIRONMENT
 
 export CVS_RSH=ssh
