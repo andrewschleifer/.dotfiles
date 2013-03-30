@@ -7,6 +7,7 @@
     cherrypick = cherry-pick
     ci = commit
     co = checkout
+    cp = cherry-pick
     detach = checkout HEAD^0
     dt = difftool
     l = log --all --decorate --oneline --graph --date-order
