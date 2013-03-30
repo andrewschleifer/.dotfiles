@@ -12,6 +12,7 @@ set tabstop=4
 set whichwrap=b,s,h,l,<,>,[,]
 set hlsearch
 set wildmode=longest,list
+set switchbuf=useopen
 set scrolloff=9
 set hidden
 set list
