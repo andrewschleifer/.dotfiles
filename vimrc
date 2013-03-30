@@ -11,7 +11,7 @@ set shiftwidth=4
 set tabstop=4
 set whichwrap=b,s,h,l,<,>,[,]
 set hlsearch
-set wildmode=longest:full
+set wildmode=longest,list
 set scrolloff=9
 set hidden
 set list
