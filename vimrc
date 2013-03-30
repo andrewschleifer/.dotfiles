@@ -17,6 +17,7 @@ set hidden
 set list
 set listchars=tab:→\ ,eol:¬
 set number
+set numberwidth=5
 set shortmess=xtI
 set visualbell
 
