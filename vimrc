@@ -27,6 +27,7 @@ execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set guifont=SourceCodePro-Regular:h15
+let did_install_syntax_menu=1
 set t_Co=256
 set background=dark
 let g:zenburn_force_dark_Background=1
