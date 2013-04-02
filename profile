@@ -103,6 +103,7 @@ if [ -n "$PS1" ]; then
     complete -c man which
     complete -c -f sudo
     complete -W '$(git branch -a 2>/dev/null | awk "{print $NF}")' -f git
+    complete -W '$(_known_hosts_list)' ping
     complete -W '$(_known_hosts_list)' ssh
     complete -W '$(_known_hosts_list)' -f scp
 fi
