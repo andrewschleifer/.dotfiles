@@ -31,13 +31,8 @@
     mnemonicprefix = true
 [difftool]
     prompt = false
-[difftool "FileMerge"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 [difftool "GitX"]
     cmd = git diff \"$LOCAL\" \"$REMOTE\" | gitx
-[difftool "SourceTree"]
-    cmd = /Users/schleifer/Applications/Kaleidoscope.app/Contents/MacOS/ksdiff -w \"$LOCAL\" \"$REMOTE\"
-    path = 
 [difftool "Kaleidoscope"]
     cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [merge]
@@ -45,13 +40,6 @@
 [mergetool]
     prompt = false
     keepBackup = true
-[mergetool "FileMerge"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\" -merge \"$REMOTE\"
-    keepBackup = false
-    trustExitCode = false
 [mergetool "Kaleidoscope"]
     cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-    trustExitCode = true
-[mergetool "SourceTree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
     trustExitCode = true
