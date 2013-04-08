@@ -1,47 +1,48 @@
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible
-set runtimepath^=${HOME}/.dot/vim
-set tags=tags;/
-set viminfo=
-set nostartofline
-set nowrap
+" configuration
 set expandtab
-set shiftwidth=4
-set tabstop=4
-set whichwrap=b,s,h,l,<,>,[,]
-set hlsearch
-set wildmode=longest,list
-set switchbuf=useopen
-set scrolloff=9
 set hidden
+set hlsearch
 set list
 set listchars=tab:→\ ,eol:¬
+set nocompatible
+set nostartofline
+set nowrap
 set number
 set numberwidth=5
+set runtimepath^=${HOME}/.dot/vim
+set scrolloff=9
+set shiftwidth=4
 set shortmess=xtI
+set tabstop=4
+set tags=tags;/
+set viminfo=
 set visualbell
+set whichwrap=b,s,h,l,<,>,[,]
+set wildmode=longest,list
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" pathogen!
 execute pathogen#infect()
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let &colorcolumn=join(range(80,999),",")
-set guifont=SourceCodePro-Regular:h15
-let did_install_syntax_menu=1
-set t_Co=256
+" appearance
+syntax on
 set background=dark
+set guifont=SourceCodePro-Regular:h15
+set switchbuf=useopen
+set t_Co=256
+let &colorcolumn=join(range(80,999),",")
+let did_install_syntax_menu=1
 let g:zenburn_force_dark_Background=1
 colorscheme zenburn
-if has("syntax")
-    syntax on
-    hi Comment ctermfg=black guifg=black
-    hi LineNr ctermfg=black
-    hi NonText ctermfg=black
-    hi SpecialKey ctermfg=black
-    hi ColorColumn ctermbg=238 guibg=#434443
-endif
 
+" overrides
+hi Comment ctermfg=black guifg=black
+hi LineNr ctermfg=black
+hi NonText ctermfg=black
+hi SpecialKey ctermfg=black
+hi ColorColumn ctermbg=238 guibg=#434443
+
+" statusline
 set statusline=\                                 "space
 set statusline+=%<%f                             "filename
 set statusline+=\                                "space
@@ -54,8 +55,6 @@ set statusline+=[%{strlen(&fenc)?&fenc:'none'}]  "file encoding
 set statusline+=%9(%l,%v%)                       "the ruler
 set statusline+=%5p%%                            "percent through file
 set statusline+=\                                "space
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " some readline keybindings
 map <C-a> 0
