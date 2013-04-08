@@ -26,6 +26,7 @@ set visualbell
 execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let &colorcolumn=join(range(80,999),",")
 set guifont=SourceCodePro-Regular:h15
 let did_install_syntax_menu=1
 set t_Co=256
@@ -38,6 +39,7 @@ if has("syntax")
     hi LineNr ctermfg=black
     hi NonText ctermfg=black
     hi SpecialKey ctermfg=black
+    hi ColorColumn ctermbg=238 guibg=#434443
 endif
 
 set statusline=\                                 "space
