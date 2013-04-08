@@ -9,6 +9,7 @@
     co = checkout
     cp = cherry-pick
     detach = checkout HEAD^0
+    df = diff --patience
     dt = difftool
     l = log --all --decorate --oneline --graph --date-order
     ll = log --no-merges
