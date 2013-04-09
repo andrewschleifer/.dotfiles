@@ -25,7 +25,6 @@ set wildmode=longest,list
 execute pathogen#infect()
 
 " appearance
-syntax on
 set background=dark
 set guifont=SourceCodePro-Regular:h15
 set switchbuf=useopen
@@ -34,6 +33,7 @@ let &colorcolumn=join(range(80,999),",")
 let did_install_syntax_menu=1
 let g:zenburn_force_dark_Background=1
 colorscheme zenburn
+syntax on
 
 " overrides
 hi Comment ctermfg=black guifg=black
