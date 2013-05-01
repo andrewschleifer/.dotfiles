@@ -30,7 +30,6 @@ alias less='less -S#2'
 alias m='more'
 alias mv='mv -i'
 alias noise='openssl rand 1024 | openssl sha1'
-alias root='sudo -i'
 alias rsh='ssh -o passwordauthentication=yes -o stricthostkeychecking=no'
 alias tarsnap="tarsnap --configfile ${HOME}/.dot/tarsnap.conf"
 alias vbox='VBoxManage'
@@ -77,7 +76,6 @@ export PATH
 # PLATFORM-SPECIFIC
 
 if [ $(uname) = "Darwin" ]; then
-    alias root='su administrator -c "sudo sh"'
     alias top='top -o cpu'
     alias diff='ksdiff'
     alias hide='/usr/bin/SetFile -a V'
