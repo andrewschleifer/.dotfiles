@@ -7,3 +7,6 @@ install:
 	test -d ~/Library && mkdir -p ~/Library/{Java,Leiningen,Python}
 	test -d ~/Library && mkdir -p ~/Library/Vim/{swap,backup,undo}
 	test -d ~/Library && mkdir -p ~/Library/KeyBindings && ln -sf ../../.dot/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
+
+push:
+	git push origin public
