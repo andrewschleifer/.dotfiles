@@ -31,6 +31,7 @@ alias m='more'
 alias mv='mv -i'
 alias noise='openssl rand 1024 | openssl sha1'
 alias root='sudo -i'
+alias rsh='ssh -o passwordauthentication=yes -o stricthostkeychecking=no'
 alias tarsnap="tarsnap --configfile ${HOME}/.dot/tarsnap.conf"
 alias vbox='VBoxManage'
 
