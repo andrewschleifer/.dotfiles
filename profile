@@ -47,7 +47,7 @@ export INPUTRC="${HOME}/.dot/inputrc"
 export LESSHISTFILE=-
 export GDBHISTFILE=-
 export HISTIGNORE="&:l[als]:[bf]g:cd:pwd:clear"
-export HISTCONTROL=ignoreboth
+export HISTCONTROL=ignoredups
 unset HISTFILE
 
 # PATH
