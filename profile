@@ -83,6 +83,7 @@ if [ $(uname) = "Darwin" ]; then
     export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
     export COPYFILE_DISABLE=true
     export PYTHONPATH="${HOME}/Library/Python"
+    export GEM_HOME="${HOME}/Library/Ruby"
     export CLASSPATH="${HOME}/Library/Java"
     export LEIN_HOME="${HOME}/Library/Leiningen"
 fi
