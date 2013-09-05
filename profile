@@ -78,7 +78,6 @@ export PATH
 
 if [ $(uname) = "Darwin" ]; then
     alias top='top -o cpu'
-    alias diff='ksdiff'
     alias hide='/usr/bin/SetFile -a V'
     export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
     export COPYFILE_DISABLE=true
