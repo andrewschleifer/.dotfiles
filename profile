@@ -55,6 +55,7 @@ unset HISTFILE
 unset PATH
 for directory in \
     ${HOME}/{,.}bin \
+    ${HOME}/Library/Ruby/shims \
     /opt/local/{,s}bin \
     /usr/local/{,s}bin \
     /usr/pkg/{,s}bin \
@@ -82,9 +83,9 @@ if [ $(uname) = "Darwin" ]; then
     export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
     export COPYFILE_DISABLE=true
     export PYTHONPATH="${HOME}/Library/Python"
-    export GEM_HOME="${HOME}/Library/Ruby"
     export CLASSPATH="${HOME}/Library/Java"
     export LEIN_HOME="${HOME}/Library/Leiningen"
+    export RBENV_ROOT="${HOME}/Library/Ruby"
 fi
 
 if [ -f /Library/ArchMac/etc/profile ]; then
