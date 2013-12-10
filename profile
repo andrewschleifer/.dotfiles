@@ -15,6 +15,7 @@ _known_hosts_list()
 
 unalias -a
 alias ..='cd ..'
+alias c='cd'
 alias cp='cp -i'
 alias df='df -h'
 alias du='du -hsc'
