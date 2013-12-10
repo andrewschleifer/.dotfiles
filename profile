@@ -86,6 +86,9 @@ if [ $(uname) = "Darwin" ]; then
     export CLASSPATH="${HOME}/Library/Java"
     export LEIN_HOME="${HOME}/Library/Leiningen"
     export RBENV_ROOT="${HOME}/Library/Ruby"
+    export PERL_MB_OPT="--install_base ${HOME}/Library/Perl";
+    export PERL_MM_OPT="INSTALL_BASE=${HOME}/Library/Perl";
+    export PERL5LIB="${HOME}/Library/Perl/lib/perl5";
 fi
 
 if [ -f /Library/ArchMac/etc/profile ]; then
