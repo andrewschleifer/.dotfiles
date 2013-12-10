@@ -100,7 +100,7 @@ fi
 if [ -n "$PS1" ]; then
     test 5 -eq $(expr "$TERM" : "xterm") && \
         PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\007"'
-    PS1='\[\e[1;37m\]% \[\e[0m\]'
+    PS1='\[\e[1;37m\]\\$ \[\e[0m\]'
     PS2='\[\e[1;37m\]... \[\e[0m\]'
     shopt -s cmdhist histverify nocaseglob
     complete -d cd
