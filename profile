@@ -64,7 +64,6 @@ for directory in \
     /usr/X11{,R6}/{,s}bin \
     /usr/{,s}bin \
     /{,s}bin \
-    /Developer/Tools \
     /usr/games
 do
     if [ -e "$directory" ]; then
