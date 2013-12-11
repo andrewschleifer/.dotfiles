@@ -57,7 +57,6 @@ unset PATH
 for directory in \
     ${HOME}/{,.}bin \
     ${HOME}/Library/Ruby/shims \
-    /Library/Stow/{,s}bin \
     /opt/local/{,s}bin \
     /usr/local/{,s}bin \
     /usr/pkg/{,s}bin \
