@@ -93,10 +93,6 @@ if [ $(uname) = "Darwin" ]; then
     export PERL5LIB="${HOME}/Library/Perl/lib/perl5";
 fi
 
-if [ -f /Library/ArchMac/etc/profile ]; then
-   . /Library/ArchMac/etc/profile
-fi
-
 # INTERACTIVE
 
 if [ -n "$PS1" ]; then
