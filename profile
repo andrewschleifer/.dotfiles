@@ -76,9 +76,10 @@ do
 done
 export PATH
 
+unset MANPATH
 for directory in \
-    ${HOME}/Library/Package/man \
-    /Library/Stow/man
+    ${HOME}/{,.}man \
+    ${HOME}/Library/Package/man
 do
     if [ -e "$directory" ]; then
        if [ -z "$MANPATH" ]; then
