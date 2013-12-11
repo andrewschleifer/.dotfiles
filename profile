@@ -57,6 +57,7 @@ unset PATH
 for directory in \
     ${HOME}/{,.}bin \
     ${HOME}/Library/Ruby/shims \
+    ${HOME}/Library/Package/{,s}bin \
     /opt/local/{,s}bin \
     /usr/local/{,s}bin \
     /usr/pkg/{,s}bin \
@@ -75,6 +76,19 @@ do
     fi
 done
 export PATH
+
+for directory in \
+    ${HOME}/Library/Package/man \
+    /Library/Stow/man
+do
+    if [ -e "$directory" ]; then
+       if [ -z "$MANPATH" ]; then
+           MANPATH="$directory"
+       else
+           MANPATH="${MANPATH}:$directory"
+       fi
+    fi
+done
 
 # PLATFORM-SPECIFIC
 
