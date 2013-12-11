@@ -63,8 +63,7 @@ for directory in \
     /usr/pkg/{,s}bin \
     /usr/X11{,R6}/{,s}bin \
     /usr/{,s}bin \
-    /{,s}bin \
-    /usr/games
+    /{,s}bin
 do
     if [ -e "$directory" ]; then
        if [ -z "$PATH" ]; then
