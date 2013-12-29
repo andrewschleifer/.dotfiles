@@ -44,10 +44,10 @@ hi ColorColumn ctermbg=238 guibg=#434443
 
 " statusline
 set statusline=\                                 "space
-set statusline+=%<%f                             "filename
-set statusline+=\                                "space
-set statusline+=%r                               "read-only flag
-set statusline+=%m                               "modified flag
+"set statusline+=%<%f                             "filename
+"set statusline+=\                                "space
+"set statusline+=%r                               "read-only flag
+"set statusline+=%m                               "modified flag
 set statusline+=%=                               "separator
 set statusline+=%y                               "filetype
 set statusline+=[%{&ff}]                         "file format
