@@ -50,7 +50,8 @@ set statusline+=%m                               "modified flag
 set statusline+=%=                               "separator
 set statusline+=%y                               "filetype
 set statusline+=[%{&ff}]                         "file format
-set statusline+=[%{strlen(&fenc)?&fenc:'none'}]  "file encoding
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}   "file encoding
+set statusline+=%{(&bomb?'+BOM':'')}]            "byte-order-mark
 set statusline+=%9(%l,%v%)                       "the ruler
 set statusline+=%5p%%                            "percent through file
 set statusline+=\                                "space
