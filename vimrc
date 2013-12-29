@@ -14,6 +14,7 @@ set runtimepath^=${HOME}/.dot/vim
 set scrolloff=9
 set shiftwidth=4
 set shortmess=xtI
+set showtabline=2
 set tags=tags;/
 set viminfo=
 set visualbell
@@ -55,6 +56,10 @@ set statusline+=%{(&bomb?'+BOM':'')}]            "byte-order-mark
 set statusline+=%9(%l,%v%)                       "the ruler
 set statusline+=%5p%%                            "percent through file
 set statusline+=\                                "space
+
+" always be changing
+map <Leader>] :tabnext<cr>
+map <Leader>[ :tabprevious<cr>
 
 " some readline keybindings
 map <C-a> 0
