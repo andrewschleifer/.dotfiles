@@ -14,7 +14,6 @@ set runtimepath^=${HOME}/.dot/vim
 set scrolloff=9
 set shiftwidth=4
 set shortmess=xtI
-set tabstop=4
 set tags=tags;/
 set viminfo=
 set visualbell
