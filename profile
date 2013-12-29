@@ -1,11 +1,6 @@
 
 # FUNCTIONS
 
-available()
-{
-    type "$1" >/dev/null 2>&1
-}
-
 _known_hosts_list()
 {
     cat ~/.ssh/known_hosts | cut -f 1 -d\  | tr , \\n | sort -u | grep \\.
