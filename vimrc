@@ -1,5 +1,6 @@
 
 " configuration
+set cursorline
 set expandtab
 set hidden
 set hlsearch
@@ -14,7 +15,6 @@ set runtimepath^=${HOME}/.dot/vim
 set scrolloff=9
 set shiftwidth=4
 set shortmess=xtI
-set showtabline=2
 set tags=tags;/
 set viminfo=
 set visualbell
@@ -26,7 +26,6 @@ execute pathogen#infect()
 
 " appearance
 set background=dark
-set guifont=SourceCodePro-Regular:h15
 set switchbuf=useopen
 set t_Co=256
 let &colorcolumn=join(range(80,999),",")
@@ -36,26 +35,22 @@ colorscheme zenburn
 syntax on
 
 " overrides
-hi Comment ctermfg=black guifg=black
-hi LineNr ctermfg=black
-hi NonText ctermfg=black
-hi SpecialKey ctermfg=black
-hi ColorColumn ctermbg=238 guibg=#434443
+highlight Comment ctermfg=242
+highlight CursorLine ctermbg=239
+highlight LineNr ctermfg=234 ctermbg=238
+highlight NonText ctermfg=232
+highlight SpecialKey ctermfg=232
+highlight ColorColumn ctermbg=238
 
 " statusline
-set statusline=\                                 "space
-"set statusline+=%<%f                             "filename
-"set statusline+=\                                "space
-"set statusline+=%r                               "read-only flag
-"set statusline+=%m                               "modified flag
-set statusline+=%=                               "separator
-set statusline+=%y                               "filetype
-set statusline+=[%{&ff}]                         "file format
+set statusline=
+set statusline+=%4p%%\                           "percent through file
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}   "file encoding
 set statusline+=%{(&bomb?'+BOM':'')}]            "byte-order-mark
-set statusline+=%9(%l,%v%)                       "the ruler
-set statusline+=%5p%%                            "percent through file
-set statusline+=\                                "space
+set statusline+=[%{&ff}]                         "file format
+set statusline+=%y                               "file type
+set statusline+=\ \                              "divider
+set statusline+=%F\                              "file name
 
 " always be changing
 map <Leader>] :tabnext<cr>
