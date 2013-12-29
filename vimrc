@@ -23,6 +23,7 @@ set wildmode=longest,list
 
 " pathogen!
 execute pathogen#infect()
+call pathogen#helptags()
 
 " appearance
 set background=dark
