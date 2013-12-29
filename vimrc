@@ -52,9 +52,11 @@ set statusline+=%y                               "file type
 set statusline+=\ \                              "divider
 set statusline+=%F\                              "file name
 
-" always be changing
-map <Leader>] :tabnext<cr>
-map <Leader>[ :tabprevious<cr>
+" file navigation
+let g:ctrlp_user_command = 'find %s -type f | grep -v \.git/'
+map <Leader>] :bnext<cr>
+map <Leader>[ :bprevious<cr>
+map <Leader>t :CtrlP<cr>
 
 " some readline keybindings
 map <C-a> 0
