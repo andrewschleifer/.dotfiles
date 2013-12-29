@@ -73,20 +73,6 @@ do
 done
 export PATH
 
-unset MANPATH
-for directory in \
-    ${HOME}/{,.}man \
-    ${HOME}/Library/Package/man
-do
-    if [ -e "$directory" ]; then
-       if [ -z "$MANPATH" ]; then
-           MANPATH="$directory"
-       else
-           MANPATH="${MANPATH}:$directory"
-       fi
-    fi
-done
-
 # PLATFORM-SPECIFIC
 
 if [ $(uname) = "Darwin" ]; then
