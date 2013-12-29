@@ -56,7 +56,6 @@ unset HISTFILE
 unset PATH
 for directory in \
     ${HOME}/{,.}bin \
-    ${HOME}/Library/Ruby/shims \
     ${HOME}/Library/Package/{,s}bin \
     /opt/local/{,s}bin \
     /usr/local/{,s}bin \
@@ -100,6 +99,7 @@ if [ $(uname) = "Darwin" ]; then
     export CLASSPATH="${HOME}/Library/Java"
     export LEIN_HOME="${HOME}/Library/Leiningen"
     export RBENV_ROOT="${HOME}/Library/Ruby"
+    export GEM_HOME="${HOME}/Library/Ruby/gems"
     export PERL_MB_OPT="--install_base ${HOME}/Library/Perl";
     export PERL_MM_OPT="INSTALL_BASE=${HOME}/Library/Perl";
     export PERL5LIB="${HOME}/Library/Perl/lib/perl5";
