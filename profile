@@ -56,7 +56,6 @@ unset HISTFILE
 unset PATH
 for directory in \
     ${HOME}/{,.}bin \
-    ${HOME}/Library/Package/{,s}bin \
     /opt/local/{,s}bin \
     /usr/local/{,s}bin \
     /usr/pkg/{,s}bin \
