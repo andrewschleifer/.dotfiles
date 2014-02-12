@@ -15,6 +15,7 @@ set runtimepath^=${HOME}/.dot/vim
 set scrolloff=9
 set shiftwidth=4
 set shortmess=xtI
+set statusline=%!StatusLine()
 set switchbuf=useopen
 set tags=tags;/
 set viminfo=
@@ -42,16 +43,6 @@ highlight LineNr ctermfg=234 ctermbg=238
 highlight NonText ctermfg=232
 highlight SpecialKey ctermfg=232
 highlight ColorColumn ctermbg=238
-
-" statusline
-set statusline=
-set statusline+=%4p%%\                           "percent through file
-set statusline+=[%{strlen(&fenc)?&fenc:'none'}   "file encoding
-set statusline+=%{(&bomb?'+BOM':'')}]            "byte-order-mark
-set statusline+=[%{&ff}]                         "file format
-set statusline+=%y                               "file type
-set statusline+=\ \                              "divider
-set statusline+=%F\                              "file name
 
 " file navigation
 let g:ctrlp_user_command = 'find %s -type f | grep -v \.git/'
@@ -87,4 +78,17 @@ autocmd CmdwinLeave * :nnoremap <cr> :nohlsearch<cr>
 
 " fix git cursor position
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
+
+" helper things
+
+function StatusLine()
+    let line  = '%4p%% '                          "percent through file
+    let line .= '[%{strlen(&fenc)?&fenc:"none"}'  "file encoding
+    let line .= '%{(&bomb?"+BOM":"")}]'           "byte-order-mark
+    let line .= '[%{&ff}]'                        "file format
+    let line .= '%y'                              "file type
+    let line .= '  '                              "divider
+    let line .= '%F'                              "file name
+    return line
+endfunction
 
