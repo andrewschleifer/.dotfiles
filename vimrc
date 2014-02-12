@@ -2,6 +2,7 @@
 " behavior
 set cursorline
 set expandtab
+set helpheight=999
 set hidden
 set hlsearch
 set list
