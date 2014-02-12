@@ -25,7 +25,7 @@ alias ll='ls -la'
 alias less='less -S#2'
 alias m='more'
 alias mv='mv -i'
-alias noise='openssl rand 48 -base64'
+alias noise='openssl rand 48 -base64 | tr -cd a-hjkp-zACE-HJKP-RT-Z2-4679\n && echo'
 alias rsh='ssh -o passwordauthentication=yes -o stricthostkeychecking=no'
 alias rcp='scp -o passwordauthentication=yes -o stricthostkeychecking=no'
 alias tarsnap="tarsnap --configfile ${HOME}/.dot/tarsnap.conf"
