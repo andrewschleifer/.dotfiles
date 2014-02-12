@@ -1,5 +1,5 @@
 
-" configuration
+" behavior
 set cursorline
 set expandtab
 set hidden
@@ -35,7 +35,7 @@ let g:zenburn_force_dark_Background=1
 colorscheme zenburn
 syntax on
 
-" overrides
+" colors
 highlight Comment ctermfg=242
 highlight CursorLine ctermbg=239
 highlight LineNr ctermfg=234 ctermbg=238
@@ -68,7 +68,7 @@ imap <C-e> <C-o>$
 " for stupid fingers
 noremap ; :
 
-" fix movement when wrap is turned on
+" fix movement when wrap is on
 nnoremap j gj
 vnoremap j gj
 nnoremap k gk
