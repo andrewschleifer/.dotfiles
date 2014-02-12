@@ -15,6 +15,7 @@ set runtimepath^=${HOME}/.dot/vim
 set scrolloff=9
 set shiftwidth=4
 set shortmess=xtI
+set switchbuf=useopen
 set tags=tags;/
 set viminfo=
 set visualbell
@@ -27,7 +28,6 @@ call pathogen#helptags()
 
 " appearance
 set background=dark
-set switchbuf=useopen
 set t_Co=256
 let &colorcolumn=join(range(80,999),",")
 let did_install_syntax_menu=1
