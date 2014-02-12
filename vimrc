@@ -31,7 +31,6 @@ call pathogen#helptags()
 set background=dark
 set t_Co=256
 let &colorcolumn=join(range(80,999),",")
-let did_install_syntax_menu=1
 let g:zenburn_force_dark_Background=1
 colorscheme zenburn
 syntax on
