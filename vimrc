@@ -71,7 +71,7 @@ vnoremap <Up> gk
 inoremap <Up> <C-o>gk
 
 " enter to stop search highlight
-nnoremap <cr> :nohlsearch<cr>
+nnoremap <silent> <cr> :nohlsearch<cr>
 autocmd CmdwinEnter * :unmap <cr>
 autocmd CmdwinLeave * :nnoremap <cr> :nohlsearch<cr>
 
