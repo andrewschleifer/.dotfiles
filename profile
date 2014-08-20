@@ -77,6 +77,8 @@ if [ $(uname) = "Darwin" ]; then
     export PERL_MM_OPT="INSTALL_BASE=${HOME}/Library/Perl";
     export PERL5LIB="${HOME}/Library/Perl/lib/perl5";
     export PYTHONPATH="${HOME}/Library/Python"
+    export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
+    export VAGRANT_HOME="${HOME}/Library/Vagrant"
 fi
 
 # INTERACTIVE
