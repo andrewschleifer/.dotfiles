@@ -29,7 +29,6 @@ execute pathogen#infect()
 call pathogen#helptags()
 
 " appearance
-set background=dark
 set t_Co=256
 let &colorcolumn=join(range(80,999),",")
 let g:zenburn_force_dark_Background=1
