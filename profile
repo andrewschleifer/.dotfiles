@@ -69,14 +69,13 @@ if [ $(uname) = "Darwin" ]; then
     alias hide='/usr/bin/SetFile -a V'
     export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
     export COPYFILE_DISABLE=true
-    export PYTHONPATH="${HOME}/Library/Python"
     export CLASSPATH="${HOME}/Library/Java"
     export LEIN_HOME="${HOME}/Library/Leiningen"
-    export RBENV_ROOT="${HOME}/Library/Ruby"
-    export GEM_HOME="${HOME}/Library/Ruby/gems"
+    export GEM_HOME="${HOME}/Library/Ruby"
     export PERL_MB_OPT="--install_base ${HOME}/Library/Perl";
     export PERL_MM_OPT="INSTALL_BASE=${HOME}/Library/Perl";
     export PERL5LIB="${HOME}/Library/Perl/lib/perl5";
+    export PYTHONPATH="${HOME}/Library/Python"
 fi
 
 # INTERACTIVE
