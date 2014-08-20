@@ -16,6 +16,7 @@ _makefile_target_list()
 unalias -a
 alias ..='cd ..'
 alias c='cd'
+alias cf-agent='/var/cfengine/bin/cf-agent'
 alias cp='cp -i'
 alias df='df -h'
 alias du='du -hsc'
