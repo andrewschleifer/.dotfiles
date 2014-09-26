@@ -58,6 +58,9 @@ imap <C-e> <C-o>$
 " for stupid fingers
 noremap ; :
 
+" goodbye ex mode
+map Q <Nop>
+
 " fix movement when wrap is on
 nnoremap j gj
 vnoremap j gj
