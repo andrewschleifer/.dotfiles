@@ -1,7 +1,6 @@
 
 " behavior
 set cursorline
-set expandtab
 set helpheight=999
 set hidden
 set hlsearch
@@ -14,7 +13,6 @@ set number
 set numberwidth=5
 set runtimepath^=${HOME}/.dot/vim
 set scrolloff=9
-set shiftwidth=4
 set shortmess=xtI
 set statusline=%!StatusLine()
 set switchbuf=useopen
