@@ -27,6 +27,7 @@ execute pathogen#infect()
 call pathogen#helptags()
 
 " appearance
+set guifont=Source\ Code\ Pro:h14
 set t_Co=256
 let &colorcolumn=join(range(80,999),",")
 let g:zenburn_force_dark_Background=1
