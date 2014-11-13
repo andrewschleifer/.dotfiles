@@ -66,7 +66,7 @@ export PATH
 # PLATFORM-SPECIFIC
 
 LOCAL="${HOME}/.dot/profile.d/$(uname -s)"
-test -f "$LOCAL" && . "$LOCAL"
+test -f "$LOCAL" && source "$LOCAL"
 
 # INTERACTIVE
 
