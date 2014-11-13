@@ -39,6 +39,7 @@ alias vbox='VBoxManage'
 
 # ENVIRONMENT
 
+export ANCHOR_USER=schleifer
 export CVS_RSH=ssh
 export EDITOR=vi
 export GNUPGHOME="${HOME}/Documents/GnuPG"
