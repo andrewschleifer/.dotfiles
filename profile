@@ -65,21 +65,8 @@ export PATH
 
 # PLATFORM-SPECIFIC
 
-if [ $(uname) = "Darwin" ]; then
-    alias top='top -o cpu'
-    alias hide='/usr/bin/SetFile -a V'
-    export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
-    export COPYFILE_DISABLE=true
-    export CLASSPATH="${HOME}/Library/Java"
-    export LEIN_HOME="${HOME}/Library/Leiningen"
-    export GEM_HOME="${HOME}/Library/Ruby"
-    export PERL_MB_OPT="--install_base ${HOME}/Library/Perl";
-    export PERL_MM_OPT="INSTALL_BASE=${HOME}/Library/Perl";
-    export PERL5LIB="${HOME}/Library/Perl/lib/perl5";
-    export PYTHONPATH="${HOME}/Library/Python"
-    export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
-    export VAGRANT_HOME="${HOME}/Library/Vagrant"
-fi
+LOCAL="${HOME}/.dot/profile.d/$(uname -s)"
+test -f "$LOCAL" && . "$LOCAL"
 
 # INTERACTIVE
 
