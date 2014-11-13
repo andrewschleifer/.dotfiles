@@ -54,12 +54,9 @@ unset HISTFILE
 
 # PATH
 
-export PATH=${HOME}/.bin
-for directory in {/usr,}{/local,/pkg,/X11,}/{,s}bin
-do
-    if [ -e "$directory" ]; then
-       PATH="${PATH}:$directory"
-    fi
+PATH=${HOME}/.bin
+for directory in {/usr,}{/local,/pkg,/X11,}/{,s}bin; do
+    test -d "$directory" && PATH="${PATH}:$directory"
 done
 export PATH
 
