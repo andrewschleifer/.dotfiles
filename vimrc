@@ -40,7 +40,7 @@ highlight CursorLine ctermbg=239
 highlight LineNr ctermfg=234 ctermbg=238
 highlight NonText ctermfg=232
 highlight SpecialKey ctermfg=232
-highlight ColorColumn ctermbg=238
+highlight ColorColumn ctermbg=238 guibg=grey30
 
 " file navigation
 let g:ctrlp_user_command = 'find %s -type f | grep -v \.git/'
