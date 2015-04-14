@@ -6,6 +6,7 @@ export CLASSPATH="${HOME}/Library/Java"
 export LEIN_HOME="${HOME}/Library/Leiningen"
 export GEM_HOME="${HOME}/Library/Ruby"
 export HAXE_STD_PATH="${HOME}/Library/Haxe/std"
+export HOMEBREW_CASK_OPTS='--appdir=/Users/Shared/Applications --caskroom=/usr/local/Caskroom'
 export N_PREFIX="${HOME}/Library/Node"
 export PERL_MB_OPT="--install_base ${HOME}/Library/Perl";
 export PERL_MM_OPT="INSTALL_BASE=${HOME}/Library/Perl";
