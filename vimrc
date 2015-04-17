@@ -42,12 +42,6 @@ highlight NonText ctermfg=232
 highlight SpecialKey ctermfg=232
 highlight ColorColumn ctermbg=238 guibg=grey30
 
-" file navigation
-let g:ctrlp_user_command = 'find %s -type f | grep -v \.git/'
-map <Leader>] :bnext<cr>
-map <Leader>[ :bprevious<cr>
-map <Leader>t :CtrlP<cr>
-
 " some readline keybindings
 map <C-a> 0
 imap <C-a> <C-o>0
