@@ -49,7 +49,7 @@ map <C-e> $
 imap <C-e> <C-o>$
 
 " for stupid fingers
-noremap ; :
+noremap <SPACE> :
 
 " goodbye ex mode
 map Q <Nop>
