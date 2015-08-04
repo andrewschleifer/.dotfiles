@@ -11,11 +11,13 @@
     detach = checkout HEAD^0
     df = diff --patience
     dt = difftool
+    eat = merge --no-ff
     local = !git log $(git log -1 --merges --pretty=format:%H)..HEAD --oneline
     l = log --all --decorate --oneline --graph --date-order
     ll = log --no-merges
     lu = log --no-merges -u
     mt = mergetool
+    pl = pull --ff-only
     st = status -sb
     t = tag -n1
     tree = log --all --graph --decorate --oneline --simplify-by-decoration
