@@ -1,1 +1,0 @@
-((ViMap normalMap) map:";" to:":")
