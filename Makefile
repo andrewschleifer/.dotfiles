@@ -9,7 +9,7 @@ install: $(shell uname)
 Darwin:
 	ln -sf .dot/CFUserTextEncoding ../.CFUserTextEncoding
 	test -d ~/Library && ln -sf .dot/tm_properties ../.tm_properties
-	test -d ~/Library && mkdir -p ~/Library/{Java,Leiningen,Python,Ruby/cache,Perl,Vim/{swap,backup,undo}}
+	test -d ~/Library && mkdir -p ~/Library/{Java,Leiningen,Node,Python,Ruby/cache,Perl,Vim/{swap,backup,undo}}
 	test -d ~/Library && mkdir -p ~/Library/KeyBindings && ln -sf ../../.dot/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 push:
