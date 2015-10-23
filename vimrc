@@ -79,6 +79,7 @@ autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
 
 function StatusLine()
     let line  = '%4p%% '                          "percent through file
+    let line .= 'u%04.4B '                        "character
     let line .= '[%{strlen(&fenc)?&fenc:"none"}'  "file encoding
     let line .= '%{(&bomb?"+BOM":"")}]'           "byte-order-mark
     let line .= '[%{&ff}]'                        "file format
