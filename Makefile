@@ -1,3 +1,5 @@
+default:
+	@echo WAT?
 
 install: $(shell uname)
 	ln -sf .dot/gitconfig ../.gitconfig
