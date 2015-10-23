@@ -43,9 +43,7 @@ highlight SpecialKey ctermfg=232
 highlight ColorColumn ctermbg=238 guibg=grey30
 
 " some readline keybindings
-map <C-a> 0
 imap <C-a> <C-o>0
-map <C-e> $
 imap <C-e> <C-o>$
 
 " for stupid fingers
