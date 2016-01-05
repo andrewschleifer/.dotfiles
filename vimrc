@@ -68,9 +68,6 @@ nnoremap <silent> <cr> :nohlsearch<cr>
 autocmd CmdwinEnter * :unmap <cr>
 autocmd CmdwinLeave * :nnoremap <cr> :nohlsearch<cr>
 
-" ctrl-p
-"let g:ctrlp_map = '<c-p>'
-
 " fix git cursor position
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
 
