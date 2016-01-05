@@ -42,10 +42,6 @@ highlight NonText ctermfg=232
 highlight SpecialKey ctermfg=232
 highlight ColorColumn ctermbg=238 guibg=grey30
 
-" some readline keybindings
-imap <C-a> <C-o>0
-imap <C-e> <C-o>$
-
 " for stupid fingers
 noremap <SPACE> :
 
