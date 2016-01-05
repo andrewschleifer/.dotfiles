@@ -48,6 +48,9 @@ noremap <SPACE> :
 " goodbye ex mode
 map Q <Nop>
 
+" make Y consistent with C and D
+nnoremap Y y$
+
 " fix movement when wrap is on
 nnoremap j gj
 vnoremap j gj
