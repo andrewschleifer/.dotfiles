@@ -42,25 +42,17 @@ highlight NonText ctermfg=232
 highlight SpecialKey ctermfg=232
 highlight ColorColumn ctermbg=238 guibg=grey30
 
-" for stupid fingers
+" commands
+
 noremap <SPACE> :
-
-" goodbye ex mode
-map Q <Nop>
-
-" make Y consistent with C and D
-nnoremap Y y$
-
-" enter to stop search highlight
 nnoremap <silent> <cr> :nohlsearch<cr>
 autocmd CmdwinEnter * :unmap <cr>
 autocmd CmdwinLeave * :nnoremap <cr> :nohlsearch<cr>
 
-" fix git cursor position
-autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
+" filetypes
 
-" fix fsharp indent
-autocmd FileType fsharp set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0]) " fix git cursor position
+autocmd FileType fsharp set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab " fix fsharp indent
 
 " helper things
 
