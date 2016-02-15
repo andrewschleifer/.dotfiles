@@ -13,7 +13,7 @@ set number
 set numberwidth=5
 set runtimepath^=${HOME}/.dot/vim
 set scrolloff=9
-set shortmess=xtI
+set shortmess=I
 set statusline=%!StatusLine()
 set switchbuf=useopen
 set tags=.tags;/
