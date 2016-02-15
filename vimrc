@@ -1,9 +1,11 @@
 " pathogen!
+
 set runtimepath^=${HOME}/.dot/vim
 execute pathogen#infect()
 call pathogen#helptags()
 
 " behavior
+
 set cursorline
 set helpheight=999
 set hidden
@@ -26,6 +28,7 @@ set whichwrap=b,s,h,l,<,>,[,]
 set wildmode=list:longest
 
 " appearance
+
 set guifont=Source\ Code\ Pro:h14
 set t_Co=256
 let &colorcolumn=join(range(80,999),",")
