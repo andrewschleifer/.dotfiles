@@ -51,18 +51,6 @@ map Q <Nop>
 " make Y consistent with C and D
 nnoremap Y y$
 
-" fix movement when wrap is on
-nnoremap j gj
-vnoremap j gj
-nnoremap k gk
-vnoremap k gk
-nnoremap <Down> gj
-inoremap <Down> <C-o>gj
-vnoremap <Down> gj
-nnoremap <Up> gk
-vnoremap <Up> gk
-inoremap <Up> <C-o>gk
-
 " enter to stop search highlight
 nnoremap <silent> <cr> :nohlsearch<cr>
 autocmd CmdwinEnter * :unmap <cr>
