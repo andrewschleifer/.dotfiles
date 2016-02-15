@@ -68,3 +68,10 @@ function StatusLine()
     return line
 endfunction
 
+function Open()
+    let selection = system('find . -type f | sed "s/^\.\///" | choose')
+    if empty(selection) | echo "Canceled" | return | end
+    exec ":e " . selection
+endfunction
+nnoremap <C-t> :call Open()<cr>
+
