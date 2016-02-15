@@ -20,7 +20,7 @@ set tags=.tags;/
 set viminfo=
 set visualbell
 set whichwrap=b,s,h,l,<,>,[,]
-set wildmode=longest,list
+set wildmode=list:longest
 
 " pathogen!
 execute pathogen#infect()
