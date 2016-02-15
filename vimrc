@@ -33,8 +33,6 @@ let &colorcolumn=join(range(80,999),",")
 let g:zenburn_force_dark_Background=1
 colorscheme zenburn
 syntax on
-
-" colors
 highlight Comment ctermfg=242
 highlight CursorLine ctermbg=239
 highlight LineNr ctermfg=234 ctermbg=238
