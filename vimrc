@@ -1,3 +1,7 @@
+" pathogen!
+set runtimepath^=${HOME}/.dot/vim
+execute pathogen#infect()
+call pathogen#helptags()
 
 " behavior
 set cursorline
@@ -11,7 +15,6 @@ set nostartofline
 set nowrap
 set number
 set numberwidth=5
-set runtimepath^=${HOME}/.dot/vim
 set scrolloff=9
 set shortmess=I
 set statusline=%!StatusLine()
@@ -21,10 +24,6 @@ set viminfo=
 set visualbell
 set whichwrap=b,s,h,l,<,>,[,]
 set wildmode=list:longest
-
-" pathogen!
-execute pathogen#infect()
-call pathogen#helptags()
 
 " appearance
 set guifont=Source\ Code\ Pro:h14
