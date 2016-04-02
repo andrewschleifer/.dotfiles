@@ -50,3 +50,5 @@
 	trustExitCode = true
 [push]
 	default = current
+[rebase]
+	autosquash = true
