@@ -1,52 +1,52 @@
 [user]
-    name = Andrew Schleifer
-    email = me@andrewschleifer.name
+	name = Andrew Schleifer
+	email = me@andrewschleifer.name
 [alias]
-    amend = commit --amend
-    bl = blame -w -M
-    cherrypick = cherry-pick
-    ci = commit
-    co = checkout
-    cp = cherry-pick
-    detach = checkout HEAD^0
-    df = diff --patience
-    dt = difftool
-    eat = merge --no-ff
-    local = !git log $(git log -1 --merges --pretty=format:%H)..HEAD --oneline
-    l = log --all --decorate --oneline --graph --date-order
-    ll = log --no-merges
-    lu = log --no-merges -u
-    mt = mergetool
-    pl = pull --ff-only
-    st = status -sb
-    t = tag -n1
-    tree = log --all --graph --decorate --oneline --simplify-by-decoration
-    w = whatchanged
-    unstage = reset HEAD
+	amend = commit --amend
+	bl = blame -w -M
+	cherrypick = cherry-pick
+	ci = commit
+	co = checkout
+	cp = cherry-pick
+	detach = checkout HEAD^0
+	df = diff --patience
+	dt = difftool
+	eat = merge --no-ff
+	local = !git log $(git log -1 --merges --pretty=format:%H)..HEAD --oneline
+	l = log --all --decorate --oneline --graph --date-order
+	ll = log --no-merges
+	lu = log --no-merges -u
+	mt = mergetool
+	pl = pull --ff-only
+	st = status -sb
+	t = tag -n1
+	tree = log --all --graph --decorate --oneline --simplify-by-decoration
+	w = whatchanged
+	unstage = reset HEAD
 [branch]
-    autosetupmerge = true
+	autosetupmerge = true
 [color]
-    ui = true
+	ui = true
 [core]
-    excludesfile = "~/.dot/gitignore"
-    quotepath = false
+	excludesfile = "~/.dot/gitignore"
+	quotepath = false
 [diff]
-    tool = Kaleidoscope
-    renames = copies
-    mnemonicprefix = true
+	tool = Kaleidoscope
+	renames = copies
+	mnemonicprefix = true
 [difftool]
-    prompt = false
+	prompt = false
 [difftool "GitX"]
-    cmd = git diff \"$LOCAL\" \"$REMOTE\" | gitx
+	cmd = git diff \"$LOCAL\" \"$REMOTE\" | gitx
 [difftool "Kaleidoscope"]
-    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [merge]
-    tool = Kaleidoscope
+	tool = Kaleidoscope
 [mergetool]
-    prompt = false
-    keepBackup = true
+	prompt = false
+	keepBackup = true
 [mergetool "Kaleidoscope"]
-    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-    trustExitCode = true
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
 [push]
 	default = current
