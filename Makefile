@@ -8,9 +8,9 @@ install: $(shell uname)
 
 Darwin:
 	ln -sf .dot/CFUserTextEncoding ../.CFUserTextEncoding
-	test -d ~/Library && ln -sf .dot/tm_properties ../.tm_properties
-	test -d ~/Library && mkdir -p ~/Library/{Java,Leiningen,Node,Python,Ruby/cache,Perl,Vim/{swap,backup,undo}}
-	test -d ~/Library && mkdir -p ~/Library/KeyBindings && ln -sf ../../.dot/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
+	mkdir -p ~/Library/Application\ Support/TextMate && ln -sf ../../../.dot/Global.tmProperties ~/Library/Application\ Support/TextMate
+	mkdir -p ~/Library/KeyBindings && ln -sf ../../.dot/DefaultKeyBinding.dict ~/Library/KeyBindings
+	mkdir -p ~/Library/{Java,Leiningen,Node,Python,Ruby/cache,Perl,Vim/{swap,backup,undo}}
 
 push:
 	git push origin public
