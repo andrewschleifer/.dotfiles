@@ -48,6 +48,8 @@
 [mergetool]
 	prompt = false
 	keepBackup = true
+[mergetool "Kaleidoscope"]
+	cmd = $HOME/Applications/Kaleidoscope.app/Contents/Resources/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
 [push]
 	default = current
 [rebase]
