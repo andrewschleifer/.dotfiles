@@ -39,18 +39,11 @@
 	submodule = log
 [difftool]
 	prompt = false
-[difftool "GitX"]
-	cmd = git diff \"$LOCAL\" \"$REMOTE\" | gitx
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [merge]
 	tool = Kaleidoscope
 [mergetool]
 	prompt = false
 	keepBackup = true
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
 [push]
 	default = current
 [rebase]
