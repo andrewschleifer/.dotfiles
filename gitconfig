@@ -30,6 +30,7 @@
 [core]
 	excludesfile = "~/.dot/gitignore"
 	quotepath = false
+	abbrev = 12
 [diff]
 	tool = Kaleidoscope
 	renames = copies
