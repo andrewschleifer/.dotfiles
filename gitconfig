@@ -36,6 +36,7 @@
 	tool = Kaleidoscope
 	renames = copies
 	mnemonicprefix = true
+	submodule = log
 [difftool]
 	prompt = false
 [difftool "GitX"]
