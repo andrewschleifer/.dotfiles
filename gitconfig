@@ -9,7 +9,7 @@
 	co = checkout
 	cp = cherry-pick
 	detach = checkout HEAD^0
-	df = diff --patience
+	df = diff
 	dt = difftool
 	eat = merge --no-ff
 	local = !git log $(git log -1 --merges --pretty=format:%H)..HEAD --oneline
@@ -33,6 +33,7 @@
 	editor = /usr/bin/vim
 	abbrev = 12
 [diff]
+	algorithm = histogram
 	tool = Kaleidoscope
 	renames = copies
 	mnemonicprefix = true
