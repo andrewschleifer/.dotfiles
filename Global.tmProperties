@@ -4,43 +4,11 @@ fontSize         = 14
 invisiblesMap    = '~ \t→'
 showInvisibles   = true
 showWrapColumn   = true
-softTabs         = true
+softTabs         = false
 softWrap         = false
 tabSize          = 4
 theme            = 8D4988B9-ADD8-436F-B388-BC1360F8504B
 wrapColumn       = 80
 
-[ *.yml ]
-fileType         = source.yaml
-
-[ source ]
-softTabs         = true
-softWrap         = true
-
-[ source.cs ]
-softWrap         = false
-
-[ source.json ]
-softWrap         = true
-
-[ source.yaml ]
-softTabs         = true
-
 [ text ]
-softTabs         = false
-softWrap         = false
-
-[ text.asciidoc ]
-softTabs         = true
-softWrap         = false
-
-[ text.html ]
-softTabs         = false
 softWrap         = true
-
-[ text.html.markdown ]
-softTabs         = false
-softWrap         = true
-
-[ text.plain ]
-softWrap         = false
