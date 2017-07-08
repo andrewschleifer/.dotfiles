@@ -12,3 +12,12 @@ wrapColumn       = 80
 
 [ text ]
 softWrap         = true
+
+[ text.asciidoc ]
+softWrap         = false
+
+[ text.html.markdown ]
+softWrap         = false
+
+[ text.markdown ]
+softWrap         = false
