@@ -18,6 +18,3 @@ softWrap         = false
 
 [ text.html.markdown ]
 softWrap         = false
-
-[ text.markdown ]
-softWrap         = false
