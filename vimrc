@@ -31,16 +31,8 @@ set wildmode=list:longest
 
 set guifont=Source\ Code\ Pro:h14
 set t_Co=256
-let &colorcolumn=join(range(80,999),",")
-let g:zenburn_force_dark_Background=1
-colorscheme zenburn
+colorscheme monochrome
 syntax on
-highlight Comment ctermfg=242
-highlight CursorLine ctermbg=239
-highlight LineNr ctermfg=234 ctermbg=238
-highlight NonText ctermfg=232
-highlight SpecialKey ctermfg=232
-highlight ColorColumn ctermbg=238 guibg=grey30
 
 " commands
 
