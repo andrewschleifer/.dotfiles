@@ -16,12 +16,10 @@ _makefile_target_list()
 unalias -a
 alias ..='cd ..'
 alias c='cd'
-alias cf-agent='/var/cfengine/bin/cf-agent'
 alias cp='cp -i'
 alias df='df -h'
 alias du='du -hsc'
 alias easy_install='easy_install -d ${PYTHONPATH%:*}'
-alias gitx='gitx --all'
 alias got='git'
 alias gti='git'
 alias grpe='grep'
@@ -38,7 +36,6 @@ alias rsh='ssh -o passwordauthentication=yes -o stricthostkeychecking=no'
 alias rcp='scp -o passwordauthentication=yes -o stricthostkeychecking=no'
 alias tag='/usr/local/bin/ctags -f .tags --exclude=.git -R'
 alias tarsnap="tarsnap --configfile ${HOME}/.dot/tarsnap.conf"
-alias vbox='VBoxManage'
 
 # ENVIRONMENT
 
