@@ -7,10 +7,5 @@ export LEIN_HOME="${HOME}/Library/Leiningen"
 export GEM_HOME="${HOME}/Library/Ruby"
 export GOPATH="${HOME}/Library/Go"
 export HAXE_STD_PATH="${HOME}/Library/Haxe/std"
-export HOMEBREW_CASK_OPTS='--appdir=/Users/Shared/Applications --caskroom=/usr/local/Caskroom'
-export N_PREFIX="${HOME}/Library/Node"
-export PERL_MB_OPT="--install_base ${HOME}/Library/Perl";
-export PERL_MM_OPT="INSTALL_BASE=${HOME}/Library/Perl";
-export PERL5LIB="${HOME}/Library/Perl/lib/perl5";
 export PYTHONPATH="${HOME}/Library/Python"
 PATH=$PATH:/usr/local/texlive/2017basic/bin/x86_64-darwin
