@@ -13,3 +13,4 @@ export PERL_MB_OPT="--install_base ${HOME}/Library/Perl";
 export PERL_MM_OPT="INSTALL_BASE=${HOME}/Library/Perl";
 export PERL5LIB="${HOME}/Library/Perl/lib/perl5";
 export PYTHONPATH="${HOME}/Library/Python"
+PATH=$PATH:/usr/local/texlive/2017basic/bin/x86_64-darwin
