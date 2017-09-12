@@ -10,7 +10,7 @@ Darwin:
 	ln -sf .dot/CFUserTextEncoding ../.CFUserTextEncoding
 	mkdir -p ~/Library/Application\ Support/TextMate && ln -sf ../../../.dot/Global.tmProperties ~/Library/Application\ Support/TextMate
 	mkdir -p ~/Library/KeyBindings && ln -sf ../../.dot/DefaultKeyBinding.dict ~/Library/KeyBindings
-	mkdir -p ~/Library/{Go,Java,Leiningen,Node,Python,Ruby/cache,Perl,Vim/{swap,backup,undo}}
+	mkdir -p ~/Library/{Go,Java,Leiningen,Node,Perl,Python,Ruby/cache,Vim/{swap,backup,undo}}
 
 push:
 	git push origin public
