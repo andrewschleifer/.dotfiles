@@ -3,6 +3,11 @@
 source ${HOME}/.dot/vim/pathogen/autoload/pathogen.vim
 execute pathogen#infect("${HOME}/.dot/vim/{}")
 
+" fzf
+
+set runtimepath+=/usr/local/opt/fzf
+nnoremap <C-o> :FZF!<cr>
+
 " behavior things
 
 set cursorline
@@ -57,13 +62,6 @@ function StatusLine()
     let line .= '%F'                              "file name
     return line
 endfunction
-
-function Open()
-    let selection = system('find . -type f | sed "s/^\.\///" | grep -v "^\.git" | choose')
-    if empty(selection) | echo "Canceled" | return | end
-    exec ":e " . selection
-endfunction
-nnoremap <C-t> :call Open()<cr>
 
 " file things
 
