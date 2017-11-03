@@ -6,6 +6,8 @@ execute pathogen#infect("${HOME}/.dot/vim/{}")
 " behavior
 
 set cursorline
+set foldcolumn=1
+set foldtext=
 set helpheight=999
 set hidden
 set hlsearch
