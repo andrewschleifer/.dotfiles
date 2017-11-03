@@ -30,10 +30,7 @@ set wildmode=list:longest
 
 " appearance
 
-set guifont=Source\ Code\ Pro:h14
-set t_Co=256
 colorscheme monochrome
-syntax on
 
 " commands
 
