@@ -41,7 +41,6 @@ alias noise='printf $(openssl rand 128 -base64 | tr -cd a-hjkp-zACE-HJKP-RT-Z2-4
 alias rsh='ssh -o passwordauthentication=yes -o stricthostkeychecking=no'
 alias rcp='scp -o passwordauthentication=yes -o stricthostkeychecking=no'
 alias tag='/usr/local/bin/ctags -f .tags --exclude=.git -R'
-alias tarsnap="tarsnap --configfile ${HOME}/.dot/tarsnap.conf"
 
 # ENVIRONMENT
 
