@@ -54,7 +54,7 @@ function StatusLine()
 endfunction
 
 function Open()
-    let selection = system('find . -type f | sed "s/^\.\///" | choose')
+    let selection = system('find . -type f | sed "s/^\.\///" | grep -v "^\.git" | choose')
     if empty(selection) | echo "Canceled" | return | end
     exec ":e " . selection
 endfunction
