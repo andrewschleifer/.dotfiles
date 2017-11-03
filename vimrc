@@ -41,11 +41,6 @@ nnoremap <silent> <cr> :nohlsearch<cr>
 autocmd CmdwinEnter * :unmap <cr>
 autocmd CmdwinLeave * :nnoremap <cr> :nohlsearch<cr>
 
-" filetypes
-
-autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0]) " fix git cursor position
-autocmd FileType fsharp set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab " fix fsharp indent
-
 " helper things
 
 function StatusLine()
