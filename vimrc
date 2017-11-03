@@ -3,7 +3,7 @@
 source ${HOME}/.dot/vim/pathogen/autoload/pathogen.vim
 execute pathogen#infect("${HOME}/.dot/vim/{}")
 
-" behavior
+" behavior things
 
 set cursorline
 set foldcolumn=1
@@ -28,14 +28,17 @@ set visualbell
 set whichwrap=b,s,h,l,<,>,[,]
 set wildmode=list:longest
 
-" appearance
+" appearance things
 
 colorscheme monochrome
 
-" commands
+" command things
 
 noremap <SPACE> :
 nnoremap <silent> <cr> :nohlsearch<cr>
+map Q <Nop> " goodbye ex mode
+nnoremap Y y$ " make Y consistent with C and D
+
 autocmd CmdwinEnter * :unmap <cr>
 autocmd CmdwinLeave * :nnoremap <cr> :nohlsearch<cr>
 
@@ -59,4 +62,23 @@ function Open()
     exec ":e " . selection
 endfunction
 nnoremap <C-t> :call Open()<cr>
+
+" file things
+
+let s:dir = has('win32') ? '$APPDATA/Vim' : match(system('uname'), "Darwin") > -1 ? '~/Library/Vim' : empty($XDG_DATA_HOME) ? '~/.local/share/vim' : '$XDG_DATA_HOME/vim'
+if isdirectory(expand(s:dir))
+  if &directory =~# '^\.,'
+    let &directory = expand(s:dir) . '/swap//,' . &directory
+  endif
+  if &backupdir =~# '^\.,'
+    let &backupdir = expand(s:dir) . '/backup//,' . &backupdir
+  endif
+  if exists('+undodir') && &undodir =~# '^\.\%(,\|$\)'
+    let &undodir = expand(s:dir) . '/undo//,' . &undodir
+  endif
+endif
+
+if exists('+undofile')
+  set undofile
+endif
 
