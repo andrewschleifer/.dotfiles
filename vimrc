@@ -1,8 +1,7 @@
 " pathogen!
 
-set runtimepath^=${HOME}/.dot/vim
-execute pathogen#infect()
-call pathogen#helptags()
+source ${HOME}/.dot/vim/pathogen/autoload/pathogen.vim
+execute pathogen#infect("${HOME}/.dot/vim/{}")
 
 " behavior
 
