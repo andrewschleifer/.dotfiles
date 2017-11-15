@@ -66,7 +66,7 @@ export PATH
 
 # PLATFORM-SPECIFIC
 
-LOCAL="${HOME}/.config/bash/profile.d/$(uname -s)"
+LOCAL="${HOME}/.config/profile.d/$(uname -s)"
 test -f "$LOCAL" && source "$LOCAL"
 
 # INTERACTIVE
