@@ -50,7 +50,6 @@ export GNUPGHOME="${HOME}/Documents/GnuPG"
 export LC_CTYPE=en_US.UTF-8
 export PAGER=less
 export RSYNC_RSH=ssh
-export INPUTRC="${HOME}/.dot/inputrc"
 export LESSHISTFILE=-
 export GDBHISTFILE=-
 export HISTIGNORE="&:l[als]:[bf]g:cd:pwd:clear"
@@ -67,7 +66,7 @@ export PATH
 
 # PLATFORM-SPECIFIC
 
-LOCAL="${HOME}/.dot/profile.d/$(uname -s)"
+LOCAL="${HOME}/.config/bash/profile.d/$(uname -s)"
 test -f "$LOCAL" && source "$LOCAL"
 
 # INTERACTIVE

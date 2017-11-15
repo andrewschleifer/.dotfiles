@@ -2,14 +2,10 @@ default:
 	@echo WAT?
 
 install: $(shell uname)
-	ln -sf .dot/gitconfig ../.gitconfig
-	ln -sf .dot/profile ../.profile
-	ln -sf .dot/vimrc ../.vimrc
+	stow bash git vim
 
 Darwin:
-	ln -sf .dot/CFUserTextEncoding ../.CFUserTextEncoding
-	mkdir -p ~/Library/Application\ Support/TextMate && ln -sf ../../../.dot/Global.tmProperties ~/Library/Application\ Support/TextMate
-	mkdir -p ~/Library/KeyBindings && ln -sf ../../.dot/DefaultKeyBinding.dict ~/Library/KeyBindings
+	stow osx
 	mkdir -p ~/Library/{Go,Java,Leiningen,Node,Perl,Python,Ruby/cache,Vim/{swap,backup,undo}}
 
 push:

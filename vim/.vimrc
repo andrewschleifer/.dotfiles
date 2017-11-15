@@ -1,7 +1,7 @@
 " pathogen!
 
-source ${HOME}/.dot/vim/pathogen/autoload/pathogen.vim
-execute pathogen#infect("${HOME}/.dot/vim/{}")
+source ${HOME}/.vim/bundle/pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 
 " fzf
 
@@ -45,6 +45,7 @@ map Q <Nop> " goodbye ex mode
 nnoremap Y y$ " make Y consistent with C and D
 nnoremap <F1> za
 vnoremap <F1> zf
+nnoremap <Leader>o :ls<CR>:b<Space>
 
 autocmd CmdwinEnter * :unmap <cr>
 autocmd CmdwinLeave * :nnoremap <cr> :nohlsearch<cr>
