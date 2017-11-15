@@ -36,6 +36,7 @@ set wildmode=list:longest
 " appearance things
 
 colorscheme monochrome
+highlight CursorLine cterm=none ctermbg=235
 
 " command things
 
