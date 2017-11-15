@@ -6,7 +6,7 @@ install: $(shell uname)
 
 Darwin:
 	stow osx
-	mkdir -p ~/Library/{Go,Java,Leiningen,Node,Perl,Python,Ruby/cache,Vim/{swap,backup,undo}}
+	mkdir -p ~/Library/{Go,Java,Leiningen,Node,Perl,Python,Ruby,Vim/{swap,backup,undo}}
 
 push:
 	git push origin public
