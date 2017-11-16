@@ -40,3 +40,6 @@
 [submodule "vim/.vim/bundle/tagbar"]
 	path = vim/.vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule "vim/.vim/bundle/csharp"]
+	path = vim/.vim/bundle/csharp
+	url = git@github.com:andrewschleifer/vim-csharp.git
