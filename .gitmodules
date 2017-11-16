@@ -15,7 +15,7 @@
 	url = git://github.com/tmhedberg/matchit.git
 [submodule "vim/.vim/bundle/monochrome"]
 	path = vim/.vim/bundle/monochrome
-	url = git://github.com/fxn/vim-monochrome.git
+	url = git://github.com/andrewschleifer/vim-monochrome.git
 [submodule "vim/.vim/bundle/nerdtree"]
 	path = vim/.vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
