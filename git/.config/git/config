@@ -28,7 +28,6 @@
 [color]
 	ui = true
 [core]
-	excludesfile = "~/.dot/gitignore"
 	quotepath = false
 	editor = /usr/bin/vim
 	abbrev = 12
