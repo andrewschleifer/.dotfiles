@@ -69,6 +69,11 @@ export PATH
 LOCAL="${HOME}/.config/profile.d/$(uname -s)"
 test -f "$LOCAL" && source "$LOCAL"
 
+# HOST-SPECIFIC
+
+LOCAL="${HOME}/.config/profile.d/$(hostname -s)"
+test -f "$LOCAL" && source "$LOCAL"
+
 # INTERACTIVE
 
 if [ -n "$PS1" ]; then
