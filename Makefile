@@ -6,7 +6,7 @@ install: $(shell uname)
 
 Darwin:
 	echo "0x08000100:0" > ~/.CFUserTextEncoding
-	mkdir -p ~/Library/{Go,Java,Leiningen,Node,Perl,Python,Ruby,Vim/{swap,backup,undo}}
+	mkdir -p ~/Library/{Go,Java,Python,Ruby,Vim/{swap,backup,undo}}
 
 push:
 	git push origin public
