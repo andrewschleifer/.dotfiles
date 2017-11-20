@@ -5,6 +5,7 @@ install: $(shell uname)
 	stow bash git vim
 
 Darwin:
+	-rm ~/.CFUserTextEncoding
 	stow osx
 	mkdir -p ~/Library/{Go,Java,Leiningen,Node,Perl,Python,Ruby,Vim/{swap,backup,undo}}
 
