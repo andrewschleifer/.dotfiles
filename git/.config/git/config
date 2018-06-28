@@ -39,6 +39,9 @@
 	cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
 [difftool "Kaleidoscope"]
 	cmd = $HOME/Applications/Kaleidoscope.app/Contents/Resources/bin/ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[log]
+	date = iso
+	mailmap = true
 [merge]
 	tool = Kaleidoscope
 [mergetool]
