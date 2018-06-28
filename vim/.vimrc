@@ -36,6 +36,7 @@ set wildmode=list:longest
 " appearance things
 
 colorscheme monochrome
+let g:ale_sign_column_always = 1
 
 " command things
 
