@@ -17,7 +17,6 @@
 	pl = pull --ff-only
 	st = status -sb
 	t = tag -n1
-	tree = log --all --graph --decorate --oneline --simplify-by-decoration
 	w = whatchanged
 	unstage = reset HEAD
 [branch]
