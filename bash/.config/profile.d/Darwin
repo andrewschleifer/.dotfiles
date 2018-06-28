@@ -6,4 +6,4 @@ export CLASSPATH="${HOME}/Library/Java"
 export GOPATH="${HOME}/Library/Go"
 export PYTHONPATH="${HOME}/Library/Python"
 export RBENV_ROOT="${HOME}/Library/Ruby"
-PATH=$PATH:/usr/local/texlive/2017basic/bin/x86_64-darwin
+PATH=/usr/local/texlive/2017basic/bin/x86_64-darwin:$PATH
