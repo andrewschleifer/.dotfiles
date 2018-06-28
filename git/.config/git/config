@@ -12,6 +12,8 @@
 	df = diff
 	dt = difftool
 	l = log --all --decorate --oneline --graph --date-order
+	grp = grep
+	grpe = grep
 	lu = log --no-merges -u
 	mt = mergetool
 	pl = pull --ff-only
