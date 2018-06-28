@@ -16,9 +16,6 @@
 [submodule "vim/.vim/bundle/monochrome"]
 	path = vim/.vim/bundle/monochrome
 	url = git://github.com/andrewschleifer/vim-monochrome.git
-[submodule "vim/.vim/bundle/nerdtree"]
-	path = vim/.vim/bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
 [submodule "vim/.vim/bundle/pathogen"]
 	path = vim/.vim/bundle/pathogen
 	url = git://github.com/tpope/vim-pathogen.git
@@ -37,9 +34,6 @@
 [submodule "vim/.vim/bundle/surround"]
 	path = vim/.vim/bundle/surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "vim/.vim/bundle/tagbar"]
-	path = vim/.vim/bundle/tagbar
-	url = git://github.com/majutsushi/tagbar.git
 [submodule "vim/.vim/bundle/csharp"]
 	path = vim/.vim/bundle/csharp
 	url = git@github.com:andrewschleifer/vim-csharp.git
