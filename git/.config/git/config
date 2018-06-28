@@ -11,9 +11,9 @@
 	detach = checkout HEAD^0
 	df = diff
 	dt = difftool
-	l = log --all --graph --date-order --full-history --pretty=format:'%C(dim blue)%h %C(reset)%s%C(cyan)%d'
 	grp = grep
 	grpe = grep
+	l = log --all --graph --date-order --full-history --pretty=format:'%C(dim blue)%h %C(reset)%s%C(cyan)%d'
 	lu = log --no-merges -u
 	mt = mergetool
 	pl = pull --ff-only
