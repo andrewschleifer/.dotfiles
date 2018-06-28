@@ -43,3 +43,6 @@
 [submodule "vim/.vim/bundle/csharp"]
 	path = vim/.vim/bundle/csharp
 	url = git@github.com:andrewschleifer/vim-csharp.git
+[submodule "vim/.vim/bundle/ale"]
+	path = vim/.vim/bundle/ale
+	url = git@github.com:w0rp/ale.git
