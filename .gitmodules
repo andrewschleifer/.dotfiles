@@ -27,7 +27,7 @@
 	url = git://github.com/sheerun/vim-polyglot
 [submodule "vim/.vim/bundle/rsi"]
 	path = vim/.vim/bundle/rsi
-	url = git:///github.com/tpope/vim-rsi.git
+	url = git://github.com/tpope/vim-rsi.git
 [submodule "vim/.vim/bundle/sensible"]
 	path = vim/.vim/bundle/sensible
 	url = git://github.com/tpope/vim-sensible.git
