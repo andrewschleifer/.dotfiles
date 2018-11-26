@@ -86,5 +86,6 @@ if [ -n "$PS1" ]; then
     complete -W '$(_known_hosts_list)' curl host ping ssh
     complete -W '$(_known_hosts_list)' -f scp
     complete -W '$(_makefile_target_list)' make
+    _available nodenv && eval "$(nodenv init -)"
     _available rbenv && eval "$(rbenv init -)"
 fi
