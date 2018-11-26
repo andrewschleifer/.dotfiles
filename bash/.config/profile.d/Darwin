@@ -4,6 +4,7 @@ export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
 export COPYFILE_DISABLE=true
 export CLASSPATH="${HOME}/Library/Java"
 export GOPATH="${HOME}/Library/Go"
+export GPG_TTY="$(tty)"
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_GITHUB_API=1
 export HOMEBREW_NO_INSECURE_REDIRECT=1
