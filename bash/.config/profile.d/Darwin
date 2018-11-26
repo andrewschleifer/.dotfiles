@@ -9,6 +9,7 @@ export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_GITHUB_API=1
 export HOMEBREW_NO_INSECURE_REDIRECT=1
 export PYTHONPATH="${HOME}/Library/Python"
+export NODENV_ROOT="${HOME}/Library/Node"
 export RBENV_ROOT="${HOME}/Library/Ruby"
 
 for directory in /usr/local/texlive/2017basic/bin/x86_64-darwin $HOME/Library/Group\ Containers/group.com.docker/bin; do
