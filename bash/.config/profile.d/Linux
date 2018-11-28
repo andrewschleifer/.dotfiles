@@ -1,1 +1,3 @@
 alias vi='vim'
+
+PATH=${HOME}/bin:$PATH

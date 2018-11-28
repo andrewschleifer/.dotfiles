@@ -12,6 +12,4 @@ export PYTHONPATH="${HOME}/Library/Python"
 export NODENV_ROOT="${HOME}/Library/Node"
 export RBENV_ROOT="${HOME}/Library/Ruby"
 
-for directory in /usr/local/texlive/2017basic/bin/x86_64-darwin $HOME/Library/Group\ Containers/group.com.docker/bin; do
-    test -d "$directory" && PATH="$directory:$PATH"
-done
+PATH=${HOME}/.bin:$PATH
