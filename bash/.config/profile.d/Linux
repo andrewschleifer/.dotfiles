@@ -1,3 +1,5 @@
 alias vi='vim'
 
+export RBENV_ROOT="${HOME}/lib/ruby"
+
 PATH=${HOME}/bin:$PATH
