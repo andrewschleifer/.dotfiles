@@ -27,7 +27,7 @@ set scrolloff=9
 set shortmess=I
 set statusline=%!StatusLine()
 set switchbuf=useopen
-set tags=.tags;/
+set tags=./.tags;
 set viminfo=
 set visualbell
 set whichwrap=b,s,h,l,<,>,[,]
