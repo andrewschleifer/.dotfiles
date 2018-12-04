@@ -3,3 +3,7 @@ alias vi='vim'
 export RBENV_ROOT="${HOME}/lib/ruby"
 
 PATH=${HOME}/bin:$PATH
+
+if [ -n "$PS1" ]; then
+  _available ssh-agent && eval "$(ssh-agent -s)"
+fi
