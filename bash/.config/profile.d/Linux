@@ -6,4 +6,5 @@ PATH=${HOME}/bin:$PATH
 
 if [ -n "$PS1" ]; then
   _available ssh-agent && eval "$(ssh-agent -s)"
+  trap '/usr/bin/ssh-agent -k' 0
 fi
