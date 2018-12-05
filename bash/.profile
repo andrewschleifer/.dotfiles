@@ -46,7 +46,6 @@ alias tag='/usr/local/bin/ctags -f .tags --exclude=.git -R'
 
 export CVS_RSH=ssh
 export EDITOR=vi
-export GNUPGHOME="${HOME}/Documents/GnuPG"
 export LC_CTYPE=en_US.UTF-8
 export PAGER=less
 export RSYNC_RSH=ssh
