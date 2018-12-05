@@ -49,6 +49,7 @@ export EDITOR=vi
 export LC_CTYPE=en_US.UTF-8
 export PAGER=less
 export RSYNC_RSH=ssh
+export MOTHERSHIP_CACHE="${HOME}/.cache/mothership"
 export LESSHISTFILE=-
 export GDBHISTFILE=-
 export HISTIGNORE="&:l[als]:[bf]g:cd:pwd:clear"
