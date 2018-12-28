@@ -5,7 +5,7 @@ install: $(shell uname)
 	stow bash git vim
 
 Linux:
-	mkdir -p ~/.local/share/vim/{swap,backup,undo}
+	mkdir -p ~/.local/share/vim/swap ~/.local/share/vim/backup ~/.local/share/vim/undo
 
 Darwin:
 	echo "0x08000100:0" > ~/.CFUserTextEncoding
