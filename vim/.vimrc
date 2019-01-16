@@ -37,6 +37,7 @@ set wildmode=list:longest
 
 colorscheme monochrome
 let g:ale_sign_column_always = 1
+set guifont=Menlo\ Regular:h14
 
 " command things
 
