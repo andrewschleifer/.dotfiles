@@ -40,3 +40,6 @@
 [submodule "vim/.vim/bundle/ale"]
 	path = vim/.vim/bundle/ale
 	url = git://github.com/w0rp/ale.git
+[submodule "vim/.vim/bundle/vimoutliner"]
+	path = vim/.vim/bundle/vimoutliner
+	url = https://github.com/vimoutliner/vimoutliner.git
