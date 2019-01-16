@@ -32,6 +32,7 @@ set viminfo=
 set visualbell
 set whichwrap=b,s,h,l,<,>,[,]
 set wildmode=list:longest
+set wildignorecase
 
 " appearance things
 
