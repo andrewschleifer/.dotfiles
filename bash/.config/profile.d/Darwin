@@ -1,3 +1,4 @@
+alias canto='say -v Sin-ji'
 alias top='top -o cpu'
 alias hide='/usr/bin/SetFile -a V'
 export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
