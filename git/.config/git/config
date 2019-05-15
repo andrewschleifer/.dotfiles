@@ -14,7 +14,7 @@
 	grp = grep
 	grpe = grep
 	l = log --all --graph --date-order --full-history --pretty=format:'%C(dim blue)%h %C(reset)%s%C(cyan)%d'
-	lu = log --no-merges -u
+	lu = log -p -c
 	mt = mergetool
 	pl = pull --ff-only
 	st = status -sb
