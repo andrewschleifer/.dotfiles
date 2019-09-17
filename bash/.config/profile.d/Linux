@@ -1,5 +1,6 @@
 alias vi='vim'
 
+export GOPATH="${HOME}/lib/go"
 export RBENV_ROOT="${HOME}/lib/ruby"
 
 PATH=${HOME}/bin:$PATH
