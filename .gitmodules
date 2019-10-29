@@ -43,3 +43,6 @@
 [submodule "vim/.vim/bundle/vimoutliner"]
 	path = vim/.vim/bundle/vimoutliner
 	url = https://github.com/vimoutliner/vimoutliner.git
+[submodule "vim/.vim/bundle/ace"]
+	path = vim/.vim/bundle/ace
+	url = https://github.com/yosssi/vim-ace.git
