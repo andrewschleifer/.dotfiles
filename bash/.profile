@@ -46,6 +46,7 @@ alias tag='/usr/local/bin/ctags -f .tags --exclude=.git -R'
 
 # ENVIRONMENT
 
+export B2_ACCOUNT_INFO="${HOME}/.cache/b2"
 export CVS_RSH=ssh
 export EDITOR=vi
 export LC_CTYPE=en_US.UTF-8
