@@ -43,15 +43,11 @@ set guifont=Menlo\ Regular:h14
 " command things
 
 noremap <SPACE> :
-nnoremap <silent> <cr> :nohlsearch<cr>
 map Q <Nop> " goodbye ex mode
 nnoremap Y y$ " make Y consistent with C and D
 nnoremap <F1> za
 vnoremap <F1> zf
 nnoremap <Leader>o :ls<CR>:b<Space>
-
-autocmd CmdwinEnter * :unmap <cr>
-autocmd CmdwinLeave * :nnoremap <cr> :nohlsearch<cr>
 
 " helper things
 
