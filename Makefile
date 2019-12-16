@@ -2,7 +2,7 @@ default:
 	@echo WAT?
 
 install: $(shell uname)
-	stow bash git vim
+	stow R bash git vim
 
 Linux:
 	mkdir -p ~/.local/share/vim/swap ~/.local/share/vim/backup ~/.local/share/vim/undo
