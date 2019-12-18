@@ -8,7 +8,7 @@ _available()
 
 _known_hosts_list()
 {
-    cat ~/.ssh/known_hosts | cut -f 1 -d\  | tr , \\n | sort -u | grep \\.
+    cat ${HOME}/.ssh/known_hosts | cut -f 1 -d\  | tr , \\n | sort -u | grep \\.
 }
 
 _makefile_target_list()
