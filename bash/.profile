@@ -13,7 +13,7 @@ _known_hosts_list()
 
 _makefile_target_list()
 {
-    make -qp 2>/dev/null | sed -n -e 's/^\([^.#%0([:space:]][^:[:space:]]*\):.*/\1/p'
+    make -qp 2>/dev/null | sed -n -e 's/^\([^.#%0([:space:]][^:[:space:]]*\):.*/\1/p' | grep -v Makefile
 }
 
 # ALIASES
