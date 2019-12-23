@@ -21,7 +21,6 @@ _makefile_target_list()
 unalias -a
 alias ..='cd ..'
 alias c='cd'
-alias cal='cal -N'
 alias car='awk "{print \$1}"'
 alias cd..='cd ..'
 alias cp='cp -i'

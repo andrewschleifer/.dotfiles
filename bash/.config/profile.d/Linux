@@ -1,3 +1,4 @@
+alias cal='cal -N -M'
 alias vi='vim'
 
 export GOPATH="${HOME}/lib/go"

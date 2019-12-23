@@ -1,3 +1,4 @@
+alias cal='cal -N'
 alias canto='say -v Sin-ji'
 alias top='top -o cpu'
 alias tv='tab -d. exec vim'
