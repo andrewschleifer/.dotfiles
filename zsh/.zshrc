@@ -1,39 +1,17 @@
 
 # FUNCTIONS
 
-_available()
-{
-    [ -x "$(command -v "$1")" ]
-}
+. ${HOME}/.dotfiles/_functions.sh
 
 # ALIASES
 
 unalias -a
-alias ..='cd ..'
-alias c='cd'
+
+. ${HOME}/.dotfiles/_alias.sh
+
 alias cal='cal -N'
 alias canto='say -v Sin-ji'
-alias car='awk "{print \$1}"'
-alias cd..='cd ..'
-alias cp='cp -i'
-alias df='df -h'
-alias du='du -hsc'
-alias easy_install='easy_install -d ${PYTHONPATH%:*}'
-alias gerp='grep'
-alias got='git'
-alias grpe='grep'
-alias gti='git'
 alias hide='/usr/bin/SetFile -a V'
-alias hsot='host'
-alias l='ls'
-alias less='less -S#2'
-alias ll='ls -lah'
-alias m='more'
-alias maek='make'
-alias mv='mv -i'
-alias noise='printf $(openssl rand 128 -base64 | tr -cd a-hjkp-zACE-HJKP-RT-Z2-4679)\\n'
-alias rcp='scp -o passwordauthentication=yes -o stricthostkeychecking=no'
-alias rsh='ssh -o passwordauthentication=yes -o stricthostkeychecking=no'
 alias tag='/usr/local/bin/ctags -f .tags --exclude=.git -R'
 alias top='top -o cpu'
 

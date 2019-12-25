@@ -1,26 +1,18 @@
 export PATH="${HOME}/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
+. ${HOME}/.dotfiles/_environ.sh
+
 export B2_ACCOUNT_INFO="${HOME}/.cache/b2"
 export CLASSPATH="${HOME}/Library/Java"
 export COPYFILE_DISABLE=true
 export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
-export CVS_RSH=ssh
-export EDITOR=vi
-export GDBHISTFILE=-
 export GNUPGHOME="${HOME}/Documents/GnuPG"
 export GOPATH="${HOME}/Library/Go"
 export GPG_TTY="$(tty)"
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_GITHUB_API=1
 export HOMEBREW_NO_INSECURE_REDIRECT=1
-export LC_CTYPE=en_US.UTF-8
-export LESSHISTFILE=-
-export MOTHERSHIP_CACHE="${HOME}/.cache/mothership"
 export NODENV_ROOT="${HOME}/Library/Node"
-export PAGER=less
 export PYTHONPATH="${HOME}/Library/Python"
-export RBENV_ROOT="${HOME}/Library/Ruby"
-export RSYNC_RSH=ssh
 export R_LIBS_USER="${HOME}/Library/R"
 export R_PROFILE_USER="${HOME}/.config/R/profile"
-export STSCLIENT_CACHE="${HOME}/.cache/stsclient"
