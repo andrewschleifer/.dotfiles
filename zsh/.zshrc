@@ -39,9 +39,7 @@ autoload -Uz compinit && compinit -i -d "${HOME}.cache/zsh/compdump"
 _available nodenv && eval "$(nodenv init -)"
 _available rbenv && eval "$(rbenv init -)"
 
-#    shopt -s cmdhist histverify nocaseglob
-#    complete -W '$(git branch -a 2>/dev/null | awk "{print $NF}")' -f git
-#    complete -W '$(_known_hosts_list)' curl host ping ssh
-#    complete -W '$(_known_hosts_list)' -f scp
-#    complete -W '$(_makefile_target_list)' make
+# shopt -s cmdhist histverify nocaseglob
+# complete -W '$(_known_hosts_list)' curl host ping ssh
+# complete -W '$(_known_hosts_list)' -f scp
 
