@@ -27,7 +27,7 @@ xterm-title() {
 	print -Pn '\e]2;%n@%m:%~\a'
 }
 
-if [[ "$TERM" = "(screen*|xterm*|rxvt*|tmux*|putty*|konsole*|gnome*)" ]]; then
+if [[ "$TERM" = (screen*|xterm*|rxvt*|tmux*|putty*|konsole*|gnome*) ]]; then
 	add-zsh-hook -Uz precmd xterm-title
 fi
 
