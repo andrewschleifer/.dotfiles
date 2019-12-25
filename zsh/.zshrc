@@ -31,6 +31,8 @@ if [[ "$TERM" = (screen*|xterm*|rxvt*|tmux*|putty*|konsole*|gnome*) ]]; then
 	add-zsh-hook -Uz precmd xterm-title
 fi
 
+bindkey -e
+
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 autoload -Uz compinit && compinit -i -d "${HOME}.cache/zsh/compdump"
 
