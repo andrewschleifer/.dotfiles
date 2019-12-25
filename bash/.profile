@@ -29,7 +29,7 @@ unset HISTFILE
 export PATH="${HOME}/bin:$PATH/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 if [ -n "$PS1" ]; then
-    PS1='\[\033]0;\u@\H\007\]\[\e[1;37m\]\$\[\e[0m\] '
+    PS1='\[\033]0;\u@\H:\w\007\]\[\e[1;37m\]\$\[\e[0m\] '
     PS2='\[\e[1;37m\]... \[\e[0m\]'
     shopt -s cmdhist histverify nocaseglob
     complete -d cd
