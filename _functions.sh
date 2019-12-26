@@ -1,6 +1,6 @@
 _available()
 {
-    [ -x "$(command -v "$1")" ]
+    [[ -x "$(command -v "$1")" ]]
 }
 
 _known_hosts_list()
