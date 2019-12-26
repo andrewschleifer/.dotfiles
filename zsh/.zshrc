@@ -31,15 +31,14 @@ if [[ "$TERM" = (screen*|xterm*|rxvt*|tmux*|putty*|konsole*|gnome*) ]]; then
 	add-zsh-hook -Uz precmd xterm-title
 fi
 
+setopt nocaseglob
 bindkey -e
-
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-autoload -Uz compinit && compinit -i -d "${HOME}.cache/zsh/compdump"
 
 _available nodenv && eval "$(nodenv init -)"
 _available rbenv && eval "$(rbenv init -)"
 
-# shopt -s cmdhist histverify nocaseglob
-# complete -W '$(_known_hosts_list)' curl host ping ssh
-# complete -W '$(_known_hosts_list)' -f scp
+zstyle ':completion:*' completer _complete _prefix
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
 
+autoload -Uz compinit
+compinit -i -d ${HOME}/.cache/zsh/compdump
