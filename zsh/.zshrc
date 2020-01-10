@@ -40,5 +40,8 @@ _available rbenv && eval "$(rbenv init -)"
 zstyle ':completion:*' completer _complete _prefix
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
 
+autoload -Uz select-word-style
+select-word-style bash
+
 autoload -Uz compinit
 compinit -i -d ${HOME}/.cache/zsh/compdump
