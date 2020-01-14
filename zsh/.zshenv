@@ -1,5 +1,3 @@
-export PATH="${HOME}/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-
 . ${HOME}/.dotfiles/_environ.sh
 
 export B2_ACCOUNT_INFO="${HOME}/.cache/b2"
