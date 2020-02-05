@@ -23,6 +23,8 @@ unset HISTFILE
 
 # INTERACTIVE
 
+# zmodload zsh/zprof
+
 xterm-title() {
 	print -Pn '\e]2;%n@%m:%~\a'
 }
