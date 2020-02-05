@@ -1,3 +1,19 @@
+wk()
+{
+	case $# in
+		1)
+			cd $HOME/Work/$(($1 - $1 % 10))\ */$1\ */
+			;;
+		2)
+			cd $HOME/Work/$(($1 - $1 % 10))\ */$1\ */$1.$2\ */
+			;;
+		*)
+			echo WAT
+			;;
+	esac
+
+}
+
 _available()
 {
 	[[ -x "$(command -v "$1")" ]]
