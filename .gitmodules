@@ -46,3 +46,6 @@
 [submodule "vim/.vim/bundle/ace"]
 	path = vim/.vim/bundle/ace
 	url = https://github.com/yosssi/vim-ace.git
+[submodule "vim/.vim/bundle/vimwiki"]
+	path = vim/.vim/bundle/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git

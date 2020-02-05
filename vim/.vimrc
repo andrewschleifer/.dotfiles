@@ -82,3 +82,6 @@ if exists('+undofile')
   set undofile
 endif
 
+" other things
+
+let g:vimwiki_list = [{'syntax': 'markdown', 'ext': '.txt'}]
