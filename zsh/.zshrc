@@ -33,6 +33,7 @@ if [[ "$TERM" = (screen*|xterm*|rxvt*|tmux*|putty*|konsole*|gnome*) ]]; then
 	add-zsh-hook -Uz precmd xterm-title
 fi
 
+unsetopt auto_menu
 setopt nocaseglob
 bindkey -e
 
