@@ -12,7 +12,7 @@ wk()
 			exit 1
 			;;
 	esac
-
+	pwd
 }
 
 _available()
