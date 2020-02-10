@@ -9,6 +9,7 @@ wk()
 			;;
 		*)
 			echo WAT
+			exit 1
 			;;
 	esac
 
