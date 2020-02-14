@@ -1,51 +1,48 @@
-[submodule "vim/.vim/bundle/CamelCaseMotion"]
-	path = vim/.vim/bundle/CamelCaseMotion
+[submodule "vim/.vim/pack/modules/start/CamelCaseMotion"]
+	path = vim/.vim/pack/modules/start/CamelCaseMotion
 	url = git://github.com/bkad/CamelCaseMotion.git
-[submodule "vim/.vim/bundle/commentary"]
-	path = vim/.vim/bundle/commentary
+[submodule "vim/.vim/pack/modules/start/commentary"]
+	path = vim/.vim/pack/modules/start/commentary
 	url = git://github.com/tpope/vim-commentary.git
-[submodule "vim/.vim/bundle/endwise"]
-	path = vim/.vim/bundle/endwise
+[submodule "vim/.vim/pack/modules/start/endwise"]
+	path = vim/.vim/pack/modules/start/endwise
 	url = git://github.com/tpope/vim-endwise.git
-[submodule "vim/.vim/bundle/fugitive"]
-	path = vim/.vim/bundle/fugitive
+[submodule "vim/.vim/pack/modules/start/fugitive"]
+	path = vim/.vim/pack/modules/start/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "vim/.vim/bundle/matchit"]
-	path = vim/.vim/bundle/matchit
+[submodule "vim/.vim/pack/modules/start/matchit"]
+	path = vim/.vim/pack/modules/start/matchit
 	url = git://github.com/tmhedberg/matchit.git
-[submodule "vim/.vim/bundle/monochrome"]
-	path = vim/.vim/bundle/monochrome
+[submodule "vim/.vim/pack/modules/start/monochrome"]
+	path = vim/.vim/pack/modules/start/monochrome
 	url = git://github.com/andrewschleifer/vim-monochrome.git
-[submodule "vim/.vim/bundle/pathogen"]
-	path = vim/.vim/bundle/pathogen
-	url = git://github.com/tpope/vim-pathogen.git
-[submodule "vim/.vim/bundle/repeat"]
-	path = vim/.vim/bundle/repeat
+[submodule "vim/.vim/pack/modules/start/repeat"]
+	path = vim/.vim/pack/modules/start/repeat
 	url = git://github.com/tpope/vim-repeat.git
-[submodule "vim/.vim/bundle/polyglot"]
-	path = vim/.vim/bundle/polyglot
+[submodule "vim/.vim/pack/modules/start/polyglot"]
+	path = vim/.vim/pack/modules/start/polyglot
 	url = git://github.com/sheerun/vim-polyglot
-[submodule "vim/.vim/bundle/rsi"]
-	path = vim/.vim/bundle/rsi
+[submodule "vim/.vim/pack/modules/start/rsi"]
+	path = vim/.vim/pack/modules/start/rsi
 	url = git://github.com/tpope/vim-rsi.git
-[submodule "vim/.vim/bundle/sensible"]
-	path = vim/.vim/bundle/sensible
+[submodule "vim/.vim/pack/modules/start/sensible"]
+	path = vim/.vim/pack/modules/start/sensible
 	url = git://github.com/tpope/vim-sensible.git
-[submodule "vim/.vim/bundle/surround"]
-	path = vim/.vim/bundle/surround
+[submodule "vim/.vim/pack/modules/start/surround"]
+	path = vim/.vim/pack/modules/start/surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "vim/.vim/bundle/csharp"]
-	path = vim/.vim/bundle/csharp
+[submodule "vim/.vim/pack/modules/start/csharp"]
+	path = vim/.vim/pack/modules/start/csharp
 	url = git://github.com/andrewschleifer/vim-csharp.git
-[submodule "vim/.vim/bundle/ale"]
-	path = vim/.vim/bundle/ale
+[submodule "vim/.vim/pack/modules/start/ale"]
+	path = vim/.vim/pack/modules/start/ale
 	url = git://github.com/w0rp/ale.git
-[submodule "vim/.vim/bundle/vimoutliner"]
-	path = vim/.vim/bundle/vimoutliner
+[submodule "vim/.vim/pack/modules/start/vimoutliner"]
+	path = vim/.vim/pack/modules/start/vimoutliner
 	url = https://github.com/vimoutliner/vimoutliner.git
-[submodule "vim/.vim/bundle/ace"]
-	path = vim/.vim/bundle/ace
+[submodule "vim/.vim/pack/modules/start/ace"]
+	path = vim/.vim/pack/modules/start/ace
 	url = https://github.com/yosssi/vim-ace.git
-[submodule "vim/.vim/bundle/vimwiki"]
-	path = vim/.vim/bundle/vimwiki
+[submodule "vim/.vim/pack/modules/start/vimwiki"]
+	path = vim/.vim/pack/modules/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git

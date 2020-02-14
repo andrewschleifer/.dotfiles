@@ -1,8 +1,3 @@
-" pathogen!
-
-source ${HOME}/.vim/bundle/pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
 " fzf
 
 set runtimepath+=/usr/local/opt/fzf
