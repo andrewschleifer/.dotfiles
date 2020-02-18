@@ -80,7 +80,7 @@ endif
 " other things
 
 let g:vimwiki_list = [{
+	\ 'ext': '.txt',
 	\ 'path': '.',
 	\ 'syntax': 'markdown',
-	\ 'ext': '.txt',
 	\ }]
