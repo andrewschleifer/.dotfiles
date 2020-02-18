@@ -79,4 +79,8 @@ endif
 
 " other things
 
-let g:vimwiki_list = [{'syntax': 'markdown', 'ext': '.txt'}]
+let g:vimwiki_list = [{
+	\ 'path': '.',
+	\ 'syntax': 'markdown',
+	\ 'ext': '.txt',
+	\ }]
