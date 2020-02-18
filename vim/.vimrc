@@ -79,6 +79,7 @@ endif
 
 " other things
 
+let g:vimwiki_folding = 'expr'
 let g:vimwiki_list = [{
 	\ 'ext': '.txt',
 	\ 'path': '.',
