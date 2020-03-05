@@ -18,6 +18,7 @@
 	mt = mergetool
 	pl = pull --ff-only
 	st = status -sb
+	stashpop = stash pop
 	t = tag -n1
 	w = whatchanged
 	unstage = reset HEAD
