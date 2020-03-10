@@ -17,6 +17,7 @@ alias vi='vim'
 . ${HOME}/.dotfiles/_environ.sh
 
 export GOPATH="${HOME}/lib/go"
+export GPG_TTY=$(tty)
 export HISTCONTROL=ignoredups
 export HISTIGNORE="&:l[als]:[bf]g:cd:pwd:clear"
 export MOTHERSHIP_CACHE="${HOME}/.cache/mothership"
