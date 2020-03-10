@@ -20,6 +20,8 @@
 	st = status -sb
 	stashpop = stash pop
 	t = tag -n1
+	tpull = pull
+	tpush = push
 	w = whatchanged
 	unstage = reset HEAD
 [branch]
