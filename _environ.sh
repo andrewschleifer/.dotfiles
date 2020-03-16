@@ -4,6 +4,5 @@ export GDBHISTFILE=-
 export LC_CTYPE=en_US.UTF-8
 export LESSHISTFILE=-
 export PAGER=less
-export RBENV_ROOT="${HOME}/lib/ruby"
 export RSYNC_RSH=ssh
 export STSCLIENT_CACHE="${HOME}/.cache/stsclient"
