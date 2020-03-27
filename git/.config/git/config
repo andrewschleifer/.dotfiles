@@ -20,6 +20,8 @@
 	st = status -sb
 	stashpop = stash pop
 	t = tag -n1
+	tl = l
+	tlu = lu
 	tpull = pull
 	tpush = push
 	w = whatchanged
