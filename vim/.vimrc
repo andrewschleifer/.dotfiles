@@ -24,6 +24,7 @@ set statusline=%!StatusLine()
 set switchbuf=useopen
 set tags=./.tags;
 set viminfo=
+set virtualedit=all
 set visualbell
 set whichwrap=b,s,h,l,<,>,[,]
 set wildmode=list:longest
