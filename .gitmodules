@@ -40,9 +40,6 @@
 [submodule "vim/.vim/pack/modules/start/ace"]
 	path = vim/.vim/pack/modules/start/ace
 	url = https://github.com/yosssi/vim-ace.git
-[submodule "vim/.vim/pack/modules/start/vimwiki"]
-	path = vim/.vim/pack/modules/start/vimwiki
-	url = https://github.com/vimwiki/vimwiki.git
 [submodule "vim/.vim/pack/modules/start/ruby-fold"]
 	path = vim/.vim/pack/modules/start/ruby-fold
 	url = https://github.com/vim-utils/vim-ruby-fold.git
