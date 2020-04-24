@@ -46,3 +46,6 @@
 [submodule "vim/.vim/pack/modules/start/ruby-fold"]
 	path = vim/.vim/pack/modules/start/ruby-fold
 	url = https://github.com/vim-utils/vim-ruby-fold.git
+[submodule "vim/.vim/pack/modules/start/eunuch"]
+	path = vim/.vim/pack/modules/start/eunuch
+	url = https://github.com/tpope/vim-eunuch.git
