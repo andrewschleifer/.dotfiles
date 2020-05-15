@@ -33,6 +33,7 @@ if [ -n "$PS1" ]; then
     PS1='\[\033]0;\u@\H:\w\007\]\[\e[1;37m\]\$\[\e[0m\] '
     PS2='\[\e[1;37m\]... \[\e[0m\]'
     shopt -s cmdhist histverify nocaseglob
+    stty -ixon
     complete -d cd
     complete -c man which
     complete -c -f sudo
