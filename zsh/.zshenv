@@ -4,6 +4,7 @@ export B2_ACCOUNT_INFO="${HOME}/.cache/b2"
 export CLASSPATH="${HOME}/Library/Java"
 export COPYFILE_DISABLE=true
 export COPY_EXTENDED_ATTRIBUTES_DISABLE=true
+export GEM_HOME="${HOME}/Library/Ruby"
 export GNUPGHOME="${HOME}/work/tool/gnupg"
 export GOPATH="${HOME}/Library/Go"
 export GPG_TTY="$(tty)"
