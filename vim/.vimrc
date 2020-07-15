@@ -34,7 +34,9 @@ set wildignorecase
 
 colorscheme monochrome
 let g:ale_sign_column_always = 1
-set guifont=Menlo\ Regular:h14
+if !has('nvim')
+	set guifont=Menlo\ Regular:h14
+endif
 
 " command things
 
