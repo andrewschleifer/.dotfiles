@@ -30,6 +30,8 @@
 	autosetupmerge = true
 [color]
 	ui = true
+[commit]
+	verbose = 2
 [core]
 	quotepath = false
 	editor = /usr/bin/vim
