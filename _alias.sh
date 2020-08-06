@@ -22,5 +22,6 @@ alias mv='mv -i'
 alias noise='printf $(openssl rand 128 -base64 | tr -cd a-hjkp-zACE-HJKP-RT-Z2-4679)\\n'
 alias psa='ps a'
 alias r='R --no-save'
+alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
 alias rcp='scp -o passwordauthentication=yes -o stricthostkeychecking=no'
 alias rsh='ssh -o passwordauthentication=yes -o stricthostkeychecking=no'
