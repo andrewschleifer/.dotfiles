@@ -43,3 +43,9 @@
 [submodule "vim/.vim/pack/modules/start/eunuch"]
 	path = vim/.vim/pack/modules/start/eunuch
 	url = https://github.com/tpope/vim-eunuch.git
+[submodule "vim/.vim/pack/modules/start/unimpaired"]
+	path = vim/.vim/pack/modules/start/unimpaired
+	url = https://github.com/tpope/vim-unimpaired
+[submodule "vim/.vim/pack/modules/start/vinegar"]
+	path = vim/.vim/pack/modules/start/vinegar
+	url = https://github.com/tpope/vim-vinegar
