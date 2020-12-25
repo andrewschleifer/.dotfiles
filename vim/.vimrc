@@ -20,6 +20,8 @@ set number
 set numberwidth=5
 set scrolloff=9
 set shortmess=I
+set splitbelow
+set splitright
 set statusline=%!StatusLine()
 set switchbuf=useopen
 set tags=./.tags;
