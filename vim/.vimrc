@@ -12,7 +12,7 @@ set helpheight=999
 set hidden
 set hlsearch
 set list
-set listchars=tab:→\ ,eol:¬
+set listchars=tab:›\ ,eol:¬
 set nocompatible
 set nostartofline
 set nowrap
