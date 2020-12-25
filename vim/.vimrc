@@ -86,9 +86,10 @@ endif
 
 let g:otl_initial_foldlevel = 10
 
-let g:vimwiki_folding = 'expr'
 let g:vimwiki_list = [{
 	\ 'ext': '.txt',
-	\ 'path': '.',
+	\ 'path': '~/work/tool/notebook',
 	\ 'syntax': 'markdown',
+	\ 'auto_tags': 1,
+	\ 'automatic_nested_syntaxes': 0,
 	\ }]
