@@ -84,6 +84,9 @@ endif
 
 " other things
 
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+
 let g:otl_initial_foldlevel = 10
 
 let g:vimwiki_list = [{
