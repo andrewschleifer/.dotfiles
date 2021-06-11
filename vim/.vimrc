@@ -34,10 +34,14 @@ set wildignorecase
 
 " appearance things
 
+if has('gui_running')
+  hi Normal guibg=#222222
+  let monochrome_italic_comments = 1
+endif
 colorscheme monochrome
 let g:ale_sign_column_always = 1
 if !has('nvim')
-	set guifont=Menlo\ Regular:h14
+	set guifont=Menlo:h14
 endif
 
 " command things
