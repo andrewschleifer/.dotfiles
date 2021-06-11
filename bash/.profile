@@ -16,12 +16,12 @@ alias vi='vim'
 
 . ${HOME}/.dotfiles/_environ.sh
 
+export GEM_HOME="${HOME}/lib/ruby"
 export GOPATH="${HOME}/lib/go"
 export GPG_TTY=$(tty)
 export HISTCONTROL=ignoredups
 export HISTIGNORE="&:l[als]:[bf]g:cd:pwd:clear"
 export MOTHERSHIP_CACHE="${HOME}/.cache/mothership"
-export RBENV_ROOT="${HOME}/lib/ruby"
 
 unset HISTFILE
 
