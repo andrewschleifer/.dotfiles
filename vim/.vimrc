@@ -17,8 +17,8 @@ set nocompatible
 set nostartofline
 set nowrap
 set number
-set numberwidth=5
-set scrolloff=9
+set numberwidth=4
+set scrolloff=8
 set shortmess=I
 set splitbelow
 set splitright
