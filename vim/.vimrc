@@ -92,7 +92,7 @@ let g:otl_initial_foldlevel = 10
 
 let g:vimwiki_list = [{
 	\ 'ext': '.txt',
-	\ 'path': '~/work/tool/notebook',
+	\ 'path': '~/work/private/tools/notebook',
 	\ 'syntax': 'markdown',
 	\ 'auto_tags': 1,
 	\ 'automatic_nested_syntaxes': 0,
