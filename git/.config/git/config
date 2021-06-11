@@ -10,6 +10,7 @@
 	cp = cherry-pick
 	detach = checkout HEAD^0
 	df = diff
+	dfs = diff --staged
 	dt = difftool
 	grp = grep
 	grpe = grep
