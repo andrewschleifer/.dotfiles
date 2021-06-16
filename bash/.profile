@@ -17,6 +17,7 @@ alias vi='vim'
 . ${HOME}/.dotfiles/_environ.sh
 
 export DISCOURSE_REPO_BASE_DIRECTORY="${HOME}/src"
+export DSSH_CONTROL_PATH_BASE="${HOME}/.ssh/socket.d"
 export GEM_HOME="${HOME}/lib/ruby"
 export GOPATH="${HOME}/lib/go"
 export GPG_TTY=$(tty)
