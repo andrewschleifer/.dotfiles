@@ -94,7 +94,7 @@ let g:netrw_liststyle = 3
 let g:otl_bold_headers = 0
 let g:otl_initial_foldlevel = 10
 
-let g:polyglot_disabled = ['csv']
+let g:polyglot_disabled = ['csv','pascal']
 
 let g:vimwiki_list = [{
 	\ 'ext': '.txt',
