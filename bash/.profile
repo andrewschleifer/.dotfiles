@@ -16,6 +16,7 @@ alias vi='vim'
 
 . ${HOME}/.dotfiles/_environ.sh
 
+export CDCK_STSCLIENT_ACCOUNTS_PATH="${HOME}/src/ops/etc/stsclient"
 export DISCOURSE_REPO_BASE_DIRECTORY="${HOME}/src"
 export DSSH_CONTROL_PATH_BASE="${HOME}/.ssh/socket.d"
 export GEM_HOME="${HOME}/lib/ruby"
