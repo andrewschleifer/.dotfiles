@@ -1,3 +1,20 @@
+wk()
+{
+	case $# in
+		1)
+			cd $HOME/Documents/$1\ */
+			;;
+		2)
+			cd $HOME/Documents/$1\ */$1.$2\ */
+			;;
+		*)
+			echo WAT
+			exit 1
+			;;
+	esac
+	pwd
+}
+
 _available()
 {
 	[[ -x "$(command -v "$1")" ]]
