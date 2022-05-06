@@ -1,42 +1,42 @@
 [submodule "vim/.vim/pack/modules/start/CamelCaseMotion"]
 	path = vim/.vim/pack/modules/start/CamelCaseMotion
-	url = git://github.com/bkad/CamelCaseMotion.git
+	url = https://github.com/bkad/CamelCaseMotion.git
 [submodule "vim/.vim/pack/modules/start/commentary"]
 	path = vim/.vim/pack/modules/start/commentary
-	url = git://github.com/tpope/vim-commentary.git
+	url = https://github.com/tpope/vim-commentary.git
 [submodule "vim/.vim/pack/modules/start/endwise"]
 	path = vim/.vim/pack/modules/start/endwise
-	url = git://github.com/tpope/vim-endwise.git
+	url = https://github.com/tpope/vim-endwise.git
 [submodule "vim/.vim/pack/modules/start/fugitive"]
 	path = vim/.vim/pack/modules/start/fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/.vim/pack/modules/start/matchit"]
 	path = vim/.vim/pack/modules/start/matchit
-	url = git://github.com/tmhedberg/matchit.git
+	url = https://github.com/tmhedberg/matchit.git
 [submodule "vim/.vim/pack/modules/start/monochrome"]
 	path = vim/.vim/pack/modules/start/monochrome
-	url = git://github.com/andrewschleifer/vim-monochrome.git
+	url = https://github.com/andrewschleifer/vim-monochrome.git
 [submodule "vim/.vim/pack/modules/start/repeat"]
 	path = vim/.vim/pack/modules/start/repeat
-	url = git://github.com/tpope/vim-repeat.git
+	url = https://github.com/tpope/vim-repeat.git
 [submodule "vim/.vim/pack/modules/start/polyglot"]
 	path = vim/.vim/pack/modules/start/polyglot
-	url = git://github.com/sheerun/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
 [submodule "vim/.vim/pack/modules/start/rsi"]
 	path = vim/.vim/pack/modules/start/rsi
-	url = git://github.com/tpope/vim-rsi.git
+	url = https://github.com/tpope/vim-rsi.git
 [submodule "vim/.vim/pack/modules/start/sensible"]
 	path = vim/.vim/pack/modules/start/sensible
-	url = git://github.com/tpope/vim-sensible.git
+	url = https://github.com/tpope/vim-sensible.git
 [submodule "vim/.vim/pack/modules/start/surround"]
 	path = vim/.vim/pack/modules/start/surround
-	url = git://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "vim/.vim/pack/modules/start/csharp"]
 	path = vim/.vim/pack/modules/start/csharp
-	url = git://github.com/andrewschleifer/vim-csharp.git
+	url = https://github.com/andrewschleifer/vim-csharp.git
 [submodule "vim/.vim/pack/modules/start/ale"]
 	path = vim/.vim/pack/modules/start/ale
-	url = git://github.com/w0rp/ale.git
+	url = https://github.com/w0rp/ale.git
 [submodule "vim/.vim/pack/modules/start/ruby-fold"]
 	path = vim/.vim/pack/modules/start/ruby-fold
 	url = https://github.com/vim-utils/vim-ruby-fold.git
