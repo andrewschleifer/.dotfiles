@@ -1,6 +1,7 @@
 export CVS_RSH=ssh
 export EDITOR=vi
 export GDBHISTFILE=-
+export GO111MODULE=auto
 export LC_CTYPE=en_US.UTF-8
 export LESSHISTFILE=-
 export PAGER=less
