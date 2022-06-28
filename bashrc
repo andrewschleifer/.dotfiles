@@ -25,6 +25,7 @@ export GPG_TTY=$(tty)
 export HISTCONTROL=ignoredups
 export HISTIGNORE="&:l[als]:[bf]g:cd:pwd:clear"
 export MOTHERSHIP_CACHE="${HOME}/.cache/mothership"
+export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
 
 unset HISTFILE
 
@@ -47,7 +48,5 @@ if [ -n "$PS1" ]; then
     _available aws_completer && complete -C aws_completer aws
     _available nodenv && eval "$(nodenv init -)"
     _available rbenv && eval "$(rbenv init -)"
-    _available ssh-agent && eval "$(ssh-agent -s)"
-    trap '/usr/bin/ssh-agent -k' 0
 fi
 
