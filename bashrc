@@ -19,19 +19,19 @@ alias vi='vim'
 export CDCK_STSCLIENT_ACCOUNTS_PATH="${HOME}/src/ops/etc/stsclient"
 export DISCOURSE_REPO_BASE_DIRECTORY="${HOME}/src"
 export DSSH_CONTROL_PATH_BASE="${HOME}/.ssh/socket.d"
-export GEM_HOME="${HOME}/lib/ruby"
 export GOPATH="${HOME}/lib/go"
 export GPG_TTY=$(tty)
 export HISTCONTROL=ignoredups
 export HISTIGNORE="&:l[als]:[bf]g:cd:pwd:clear"
 export MOTHERSHIP_CACHE="${HOME}/.cache/mothership"
+export RBENV_ROOT="${HOME}/lib/ruby"
 export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
 
 unset HISTFILE
 
 # INTERACTIVE
 
-export PATH="${HOME}/bin:${RBENV_ROOT}/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export PATH="${HOME}/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 if [ -n "$PS1" ]; then
     PS1='\[\033]0;\u@\H:\w\007\]\[\e[1;37m\]\$\[\e[0m\] '
