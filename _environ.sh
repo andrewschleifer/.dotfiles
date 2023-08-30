@@ -3,6 +3,7 @@ export EDITOR=vi
 export GDBHISTFILE=-
 export GO111MODULE=auto
 export LC_CTYPE=en_US.UTF-8
+export LESS="RS#2"
 export LESSHISTFILE=-
 export PAGER=less
 export RSYNC_RSH=ssh
