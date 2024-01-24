@@ -25,7 +25,7 @@ export HISTCONTROL=ignoredups
 export HISTIGNORE="&:l[als]:[bf]g:cd:pwd:clear"
 export MOTHERSHIP_CACHE="${HOME}/.cache/mothership"
 export RBENV_ROOT="${HOME}/lib/ruby"
-export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
+export SSH_AUTH_SOCK="${HOME}/.ssh/socket.d/agent"
 
 unset HISTFILE
 
