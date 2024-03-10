@@ -1,0 +1,2 @@
+#--proxy 127.0.0.1:1888
+--output ${HOME}/Downloads/%(title)s-%(id)s.%(ext)s
