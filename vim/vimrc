@@ -1,8 +1,3 @@
-" fzf
-
-set runtimepath+=/usr/local/opt/fzf
-nnoremap <C-o> :FZF!<cr>
-
 " behavior things
 
 set cursorline
@@ -49,8 +44,6 @@ endif
 noremap <SPACE> :
 map Q <Nop> " goodbye ex mode
 nnoremap Y y$ " make Y consistent with C and D
-nnoremap <F1> za
-vnoremap <F1> zf
 nnoremap <Leader>o :ls<CR>:b<Space>
 
 " helper things
@@ -91,15 +84,4 @@ endif
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 
-let g:otl_bold_headers = 0
-let g:otl_initial_foldlevel = 10
-
 let g:polyglot_disabled = ['csv','pascal']
-
-let g:vimwiki_list = [{
-	\ 'ext': '.txt',
-	\ 'path': '~/work/private/tools/notebook',
-	\ 'syntax': 'markdown',
-	\ 'auto_tags': 1,
-	\ 'automatic_nested_syntaxes': 0,
-	\ }]
