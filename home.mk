@@ -19,6 +19,9 @@ endif
 .config/yt-dlp: | .config
 	ln -s ../.dotfiles/yt-dlp $@
 
+.profile:
+	ln -s .dotfiles/profile $@
+
 .vim:
 	ln -s .dotfiles/vim $@
 
