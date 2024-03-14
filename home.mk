@@ -6,7 +6,7 @@ home: $(COMMON) .bin .CFUserTextEncoding .config/yt-dlp .zprofile .zshenv .zshrc
 	mkdir -m 0700 -p ~/Library/{Go,Java/JavaVirtualMachines,Python,Ruby,Vim/{swap,backup,undo}}
 endif
 ifeq ($(UNAME), Linux)
-home: $(COMMON) .profile
+home: $(COMMON) .bashrc .profile
 	mkdir -p ~/.local/share/vim/swap ~/.local/share/vim/backup ~/.local/share/vim/undo
 endif
 
@@ -18,6 +18,9 @@ endif
 
 .config/yt-dlp: | .config
 	ln -s ../.dotfiles/yt-dlp $@
+
+.bashrc:
+	ln -s ../.dotfiles/bashrc $@
 
 .profile:
 	ln -s .dotfiles/profile $@
