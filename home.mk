@@ -11,7 +11,7 @@ home: $(COMMON) .profile
 endif
 
 .bin .cache .config:
-	mkdir -p 0700 $@
+	mkdir -m 0700 $@
 
 .config/git: | .config
 	ln -s ../.dotfiles/git $@
