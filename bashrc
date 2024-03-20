@@ -1,20 +1,20 @@
 
 # FUNCTIONS
 
-. ${HOME}/.dotfiles/_functions.sh
+. ${HOME}/.dotfiles/functions.sh
 
 # ALIASES
 
 unalias -a
 
-. ${HOME}/.dotfiles/_alias.sh
+. ${HOME}/.dotfiles/aliases.sh
 
 alias cal='cal -N -M'
 alias vi='vim'
 
 # ENVIRONMENT
 
-. ${HOME}/.dotfiles/_environ.sh
+. ${HOME}/.dotfiles/environment.sh
 
 export CDCK_STSCLIENT_ACCOUNTS_PATH="${HOME}/src/ops/etc/stsclient"
 export DISCOURSE_REPO_BASE_DIRECTORY="${HOME}/src"

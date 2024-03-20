@@ -1,13 +1,13 @@
 
 # FUNCTIONS
 
-. ${HOME}/.dotfiles/_functions.sh
+. ${HOME}/.dotfiles/functions.sh
 
 # ALIASES
 
 unalias -a
 
-. ${HOME}/.dotfiles/_alias.sh
+. ${HOME}/.dotfiles/aliases.sh
 
 alias cal='cal -N'
 alias canto='say -v Sin-ji'

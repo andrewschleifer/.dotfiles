@@ -1,4 +1,4 @@
-. ${HOME}/.dotfiles/_environ.sh
+. ${HOME}/.dotfiles/environment.sh
 
 export B2_ACCOUNT_INFO="${HOME}/.cache/b2"
 export CLASSPATH="${HOME}/Library/Java"
