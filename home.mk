@@ -1,41 +1,30 @@
-UNAME = $(shell uname -s)
-COMMON = .cache .config .config/git .vim
+MKDIR    := .bin .cache .config
+DOTFILES := .bashrc .profile .vim .zprofile .zshenv .zshrc
+SYMLINKS := .config/git .config/yt-dlp
+
+UNAME  := $(shell uname -s)
+
+default:
+	@echo WAT
 
 ifeq ($(UNAME), Darwin)
-home: $(COMMON) .bin .CFUserTextEncoding .config/yt-dlp .zprofile .zshenv .zshrc
+all: .cache .config .config/git .vim .zprofile .zshenv .zshrc .bin .CFUserTextEncoding .config/yt-dlp
 	mkdir -m 0700 -p ~/Library/{Go,Java/JavaVirtualMachines,Python,Ruby,Vim/{swap,backup,undo}}
 endif
+
 ifeq ($(UNAME), Linux)
-home: $(COMMON) .bashrc .profile
+all: .cache .config .config/git .vim .bashrc .profile
 	mkdir -p ~/.local/share/vim/swap ~/.local/share/vim/backup ~/.local/share/vim/undo
 endif
 
-.bin .cache .config:
+$(MKDIR):
 	mkdir -m 0700 $@
 
-.config/git: | .config
-	ln -s ../.dotfiles/git $@
+$(DOTFILES):
+	ln -s $(subst .,.dotfiles/,$@) $@
 
-.config/yt-dlp: | .config
-	ln -s ../.dotfiles/yt-dlp $@
-
-.bashrc:
-	ln -s ../.dotfiles/bashrc $@
-
-.profile:
-	ln -s .dotfiles/profile $@
-
-.vim:
-	ln -s .dotfiles/vim $@
-
-.zprofile:
-	ln -s .dotfiles/zprofile $@
-
-.zshenv:
-	ln -s .dotfiles/zshenv $@
-
-.zshrc:
-	ln -s .dotfiles/zshrc $@
+$(SYMLINKS): | .config
+	ln -s ../$(subst .config,.dotfiles,$@) $@
 
 .CFUserTextEncoding:
 	printf "0x08000100:0x0" > $@
