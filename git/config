@@ -7,6 +7,8 @@
 	cherrypick = cherry-pick
 	ci = commit
 	co = checkout
+	commi = commit
+	connit = commit
 	cp = cherry-pick
 	detach = checkout HEAD^0
 	df = diff
