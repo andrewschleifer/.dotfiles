@@ -1,3 +1,8 @@
+noise()
+{
+	printf $(openssl rand -base64 ${1:-64} | tr -cd a-hjkp-zACE-HJKP-RT-Z2-4679)\\n
+}
+
 _available()
 {
 	[[ -x "$(command -v "$1")" ]]
