@@ -48,5 +48,6 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 autoload -Uz select-word-style
 select-word-style bash
 
+fpath=($HOME/.config/zsh $fpath)
 autoload -Uz compinit
 compinit -i -d ${HOME}/.cache/zsh/compdump
