@@ -39,9 +39,6 @@ unsetopt auto_menu
 setopt nocaseglob
 bindkey -e
 
-_available nodenv && eval "$(nodenv init -)"
-_available rbenv && eval "$(rbenv init -)"
-
 zstyle ':completion:*' completer _complete _prefix
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
 

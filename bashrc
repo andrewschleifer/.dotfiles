@@ -16,15 +16,12 @@ alias vi='vim'
 
 . ${HOME}/.dotfiles/environment.sh
 
-export CDCK_STSCLIENT_ACCOUNTS_PATH="${HOME}/src/ops/etc/stsclient"
 export DISCOURSE_REPO_BASE_DIRECTORY="${HOME}/src"
 export DSSH_CONTROL_PATH_BASE="${HOME}/.ssh/socket.d"
 export GOPATH="${HOME}/lib/go"
-export GPG_TTY=$(tty)
 export HISTCONTROL=ignoredups
 export HISTIGNORE="&:l[als]:[bf]g:cd:pwd:clear"
 export MOTHERSHIP_CACHE="${HOME}/.cache/mothership"
-export RBENV_ROOT="${HOME}/lib/ruby"
 export SSH_AUTH_SOCK="${HOME}/.ssh/socket.d/agent"
 
 unset HISTFILE
@@ -46,7 +43,5 @@ if [ -n "$PS1" ]; then
     complete -W '$(_known_hosts_list)' -f scp
     complete -W '$(_makefile_target_list)' make
     _available aws_completer && complete -C aws_completer aws
-    _available nodenv && eval "$(nodenv init -)"
-    _available rbenv && eval "$(rbenv init -)"
 fi
 
