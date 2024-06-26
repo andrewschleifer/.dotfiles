@@ -40,3 +40,6 @@
 [submodule "vim/pack/modules/start/vinegar"]
 	path = vim/pack/modules/start/vinegar
 	url = https://github.com/tpope/vim-vinegar
+[submodule "vim/pack/modules/start/sleuth"]
+	path = vim/pack/modules/start/sleuth
+	url = https://github.com/tpope/vim-sleuth
