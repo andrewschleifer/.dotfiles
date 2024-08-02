@@ -16,7 +16,7 @@
 	dt = difftool
 	grp = grep
 	grpe = grep
-	l = log --all --graph --date-order --full-history --pretty=format:'%C(dim blue)%h %C(reset)%s%C(cyan)%d'
+	l = log --all --graph --date-order --full-history --pretty=format:'%C(brightyellow)%h%C(reset) %s%C(cyan)%d'
 	lu = log -p -c
 	mt = mergetool
 	pl = pull --ff-only
@@ -33,6 +33,8 @@
 	autosetupmerge = true
 [color]
 	ui = true
+[color "diff"]
+	commit = "brightyellow"
 [commit]
 	verbose = 2
 [core]
