@@ -10,7 +10,7 @@ unalias -a
 . ${HOME}/.dotfiles/aliases.sh
 
 alias cal='cal -N'
-alias canto='say -v Sin-ji'
+alias canto='say -v Sinji'
 alias hide='/usr/bin/SetFile -a V'
 alias love="${HOME}/Applications/love.app/Contents/MacOS/love"
 alias tag='/usr/local/bin/ctags -f .tags --exclude=.git -R'
