@@ -3,6 +3,7 @@
 	email = me@andrewschleifer.name
 [alias]
 	amend = commit --amend
+	b = branch
 	bl = blame -w -M
 	cherrypick = cherry-pick
 	ci = commit
