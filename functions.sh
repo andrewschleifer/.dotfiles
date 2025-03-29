@@ -1,6 +1,6 @@
 noise()
 {
-	printf $(openssl rand -base64 ${1:-64} | tr -cd a-hjkp-zACE-HJKP-RT-Z2-4679)\\n
+	printf "%s\n" $(openssl rand -base64 ${1:-64} | tr -cd a-hjkp-zACE-HJKP-RT-Z2-4679)
 }
 
 _available()
