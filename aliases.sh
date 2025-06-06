@@ -1,6 +1,7 @@
 alias ..='cd ..'
 alias c='cd'
 alias cd..='cd ..'
+alias chmdo='chmod'
 alias cp='cp -i'
 alias cta='cat'
 alias df='df -h'
