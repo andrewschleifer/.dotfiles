@@ -28,7 +28,7 @@ unset HISTFILE
 autoload -Uz add-zsh-hook
 
 xterm-title() {
-	print -Pn '\e]2;%n@%m:%~\a'
+	print -Pn '\e]2;%n@%m\a'
 }
 
 if [[ "$TERM" = (screen*|xterm*|rxvt*|tmux*|putty*|konsole*|gnome*) ]]; then
