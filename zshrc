@@ -50,3 +50,4 @@ autoload -Uz compinit
 compinit -i -d ${HOME}/.cache/zsh/compdump
 
 _available fzf && source <(fzf --zsh)
+_available rbenv && source <(rbenv init - zsh)
