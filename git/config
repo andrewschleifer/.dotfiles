@@ -17,7 +17,8 @@
 	dt = difftool
 	grp = grep
 	grpe = grep
-	l = log --all --graph --date-order --full-history --pretty=format:'%C(brightyellow)%h%C(reset) %s%C(cyan)%d'
+	l = log --graph --date-order --full-history --pretty=format:'%C(brightyellow)%h%C(reset) %s%C(cyan)%d'
+	la = l --all
 	lu = log -p -c
 	mt = mergetool
 	pl = pull --ff-only
