@@ -4,3 +4,6 @@ Icon?
 .tags
 .ruby-version
 **/.bundle/path/
+/.claude/
+/.codex/
+/.opencode/
