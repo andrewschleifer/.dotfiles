@@ -9,7 +9,7 @@ default:
 
 ifeq ($(UNAME), Darwin)
 all: .cache .config .config/git .vim .zprofile .zshenv .zshrc .bin .CFUserTextEncoding .config/yt-dlp
-	mkdir -m 0700 -p ~/Library/{Go,Java/JavaVirtualMachines,Node/packages,Vim/{swap,backup,undo}}
+	mkdir -m 0700 -p ~/Library/{Go,Java/JavaVirtualMachines,Node/packages,Ruby/{packages,versions},Vim/{swap,backup,undo}}
 endif
 
 ifeq ($(UNAME), Linux)
