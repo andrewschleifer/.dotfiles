@@ -17,12 +17,12 @@
 	dt = difftool
 	grp = grep
 	grpe = grep
-	l = log --graph --date-order --full-history --pretty=format:'%C(brightyellow)%h%C(reset) %s%C(cyan)%d'
-	la = l --all
-	lu = log -p -c
+	l = log --graph --date-order --pretty=format:'%C(yellow)%h%C(reset) %s%C(cyan)%(decorate:separator= )' --decorate-refs="HEAD" --decorate-refs="refs/heads/*" --decorate-refs="refs/tags/*"
+	la = l --decorate-refs="refs/remotes/*"
+	lu = log --patch --cc
 	mt = mergetool
 	pl = pull --ff-only
-	st = status -sb
+	st = status --short --branch
 	stashpop = stash pop
 	t = tag -n1
 	tl = l
