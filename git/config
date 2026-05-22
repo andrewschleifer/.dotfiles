@@ -17,8 +17,9 @@
 	dt = difftool
 	grp = grep
 	grpe = grep
-	l = log --graph --date-order --pretty=format:'%C(yellow)%h%C(reset) %s%C(cyan)%(decorate:separator= )' --decorate-refs="HEAD" --decorate-refs="refs/heads/*" --decorate-refs="refs/tags/*"
-	la = l --decorate-refs="refs/remotes/*"
+	l = log --graph --branches --date-order --pretty=format:'%C(yellow)%h%C(reset) %s%C(cyan)%(decorate:separator= )' --decorate-refs="HEAD"
+	ll = l --decorate-refs="HEAD" --decorate-refs="refs/heads/*" --decorate-refs="refs/tags/*"
+	lr = l --decorate-refs="HEAD" --decorate-refs="refs/heads/*" --decorate-refs="refs/tags/*" --decorate-refs="refs/remotes/*"
 	lu = log --patch --cc
 	mt = mergetool
 	pl = pull --ff-only
