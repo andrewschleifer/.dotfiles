@@ -17,7 +17,7 @@
 	dt = difftool
 	grp = grep
 	grpe = grep
-	l = log --graph --branches --date-order --pretty=format:'%C(yellow)%h%C(reset) %s%C(cyan)%(decorate:separator= )' --decorate-refs="HEAD"
+	l = log --graph --branches --date-order --pretty=format:'%C(yellow)%h%C(reset) %s%C(auto)%(decorate:separator= ,tag=)' --decorate-refs="HEAD"
 	ll = l --decorate-refs="HEAD" --decorate-refs="refs/heads/*" --decorate-refs="refs/tags/*"
 	lr = l --decorate-refs="HEAD" --decorate-refs="refs/heads/*" --decorate-refs="refs/tags/*" --decorate-refs="refs/remotes/*"
 	lu = log --patch --cc
@@ -36,6 +36,11 @@
 	autosetupmerge = true
 [color]
 	ui = true
+[color "decorate"]
+	branch = white
+	remoteBranch = dim white
+	tag = green
+	HEAD = ul white
 [color "diff"]
 	commit = "brightyellow"
 [commit]
