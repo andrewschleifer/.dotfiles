@@ -1,6 +1,6 @@
 MKDIR    := .bin .cache .config
 DOTFILES := .bashrc .profile .vim .zprofile .zshenv .zshrc
-SYMLINKS := .config/git .config/pip .config/yt-dlp
+SYMLINKS := .config/git .config/yt-dlp
 
 UNAME  := $(shell uname -s)
 

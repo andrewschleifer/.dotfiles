@@ -1,1 +1,1 @@
-Various .dotfiles from $HOME
+Various from $HOME
