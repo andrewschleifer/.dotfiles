@@ -54,21 +54,25 @@
 	renames = copies
 	mnemonicprefix = true
 	submodule = log
-	tool = Kaleidoscope
+	tool = GitX
 [difftool]
 	prompt = false
+[difftool "GitX"]
+	cmd = gitx --diff "$LOCAL" "$REMOTE"
 [difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path $MERGED -- $LOCAL $REMOTE
 [log]
 	date = iso
 	mailmap = true
 [merge]
 	keepBackup = false
-	tool = Kaleidoscope
+	tool = GitX
 [mergetool]
 	prompt = false
+[mergetool "GitX"]
+	cmd = gitx --merge "$LOCAL" "$BASE" "$REMOTE" "$MERGED"
 [mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	cmd = ksdiff --merge --output $MERGED --base $BASE -- $LOCAL --snapshot $REMOTE --snapshot
 	trustExitCode = true
 [push]
 	default = current
