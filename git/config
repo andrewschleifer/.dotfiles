@@ -15,6 +15,7 @@
 	df = diff
 	dfs = diff --staged
 	dt = difftool
+	git = !git
 	grp = grep
 	grpe = grep
 	l = log --graph --branches --date-order --pretty=format:'%C(yellow)%h%C(reset) %s%C(auto)%(decorate:separator= ,tag=)' --decorate-refs="HEAD"
